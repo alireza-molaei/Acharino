@@ -13,6 +13,11 @@ return new class extends Migration
     {
         Schema::create('services', function (Blueprint $table) {
             $table->id();
+            $table->string('slug',128)->unique();
+            $table->string('title');
+            $table->text('description');
+            $table->text('url');
+            $table->string('back_image');
             $table->timestamps();
         });
     }
@@ -22,6 +27,12 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('services');
+        Schema::table('services', function (Blueprint $table) {
+            $table->dropColumn('slug');
+            $table->dropColumn('title');
+            $table->dropColumn('description');
+            $table->dropColumn('url');
+            $table->dropColumn('back-image');
+        });
     }
 };
