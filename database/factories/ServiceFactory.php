@@ -24,7 +24,7 @@ class ServiceFactory extends Factory
             'title' => $this->faker->name(),
             'description' => $this->faker->realText(),
             'url' => $this->faker->url(),
-            'thumbnail' => $this->faker->imageUrl(359.95, 224, 'industrial', true),
+            'thumbnail' => 'https://loremflickr.com/320/240?random='. rand(1,99),
         ];
     }
 }
