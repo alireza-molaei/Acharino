@@ -4,8 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-return new class extends Migration
-{
+return new class extends Migration {
     /**
      * Run the migrations.
      */
@@ -13,11 +12,11 @@ return new class extends Migration
     {
         Schema::create('services', function (Blueprint $table) {
             $table->id();
-            $table->string('slug',128)->unique();
+            $table->string('slug', 128)->unique();
             $table->string('title');
             $table->text('description');
             $table->text('url');
-            $table->string('back_image');
+            $table->string('thumbnail');
             $table->timestamps();
         });
     }
@@ -32,7 +31,7 @@ return new class extends Migration
             $table->dropColumn('title');
             $table->dropColumn('description');
             $table->dropColumn('url');
-            $table->dropColumn('back-image');
+            $table->dropColumn('thumbnail');
         });
     }
 };
