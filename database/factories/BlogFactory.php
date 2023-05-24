@@ -9,7 +9,7 @@ use Illuminate\Database\Eloquent\Factories\Factory;
  */
 class BlogFactory extends Factory
 {
-    protected $model = \App\Models\blog::class;
+    protected $model = \App\Models\Blog::class;
 
     /**
      * Define the model's default state.
@@ -21,7 +21,7 @@ class BlogFactory extends Factory
         return [
             'title' => $this->faker->name(),
             'description' => $this->faker->text(122),
-            'thumbnail' => 'https://loremflickr.com/320/240?random='. rand(1,99)
+            'thumbnail' => 'https://loremflickr.com/359/233?random=' . rand(1, 99)
         ];
     }
 }
