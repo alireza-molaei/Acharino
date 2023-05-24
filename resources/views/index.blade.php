@@ -18,38 +18,38 @@
     <!-- Favicon and Touch Icons -->
     <link href="{{asset('images/favicon/favicon.png')}}" rel="shortcut icon" type="image/png">
     <li
-    )nk href="{{asset('images/favicon/apple-touch-icon-57x57.png')}}" rel="apple-touch-icon" sizes="57x57">
-    <link href="{{asset('images/favicon/apple-touch-icon-72x72.png')}}" rel="apple-touch-icon" sizes="72x72">
-    <link href="{{asset('images/favicon/apple-touch-icon-114x114.png')}}" rel="apple-touch-icon" sizes="114x114">
-    <link href="{{asset('images/favicon/apple-touch-icon-144x144.png')}}" rel="apple-touch-icon" sizes="144x144">
+        )nk href="{{asset('images/favicon/apple-touch-icon-57x57.png')}}" rel="apple-touch-icon" sizes="57x57">
+        <link href="{{asset('images/favicon/apple-touch-icon-72x72.png')}}" rel="apple-touch-icon" sizes="72x72">
+        <link href="{{asset('images/favicon/apple-touch-icon-114x114.png')}}" rel="apple-touch-icon" sizes="114x114">
+        <link href="{{asset('images/favicon/apple-touch-icon-144x144.png')}}" rel="apple-touch-icon" sizes="144x144">
 
-    <!-- Icon fonts -->
-    <link href="{{asset('css/font-awesome.min.css')}}" rel="stylesheet">
-    <link href="{{asset('css/flaticon.css')}}" rel="stylesheet">
+        <!-- Icon fonts -->
+        <link href="{{asset('css/font-awesome.min.css')}}" rel="stylesheet">
+        <link href="{{asset('css/flaticon.css')}}" rel="stylesheet">
 
-    <!-- Bootstrap core CSS -->
-    <link href="{{asset('css/bootstrap.min.css')}}" rel="stylesheet">
+        <!-- Bootstrap core CSS -->
+        <link href="{{asset('css/bootstrap.min.css')}}" rel="stylesheet">
 
-    <!-- Plugins for this template -->
-    <link href="{{asset('css/animate.css')}}" rel="stylesheet">
-    <link href="{{asset('css/owl.carousel.css')}}" rel="stylesheet">
-    <link href="{{asset('css/owl.theme.css')}}" rel="stylesheet">
-    <link href="{{asset('css/slick.css')}}" rel="stylesheet">
-    <link href="{{asset('css/slick-theme.css')}}" rel="stylesheet">
-    <link href="{{asset('css/owl.transitions.css')}}" rel="stylesheet">
-    <link href="{{asset('css/jquery.fancybox.css')}}" rel="stylesheet">
-    <link href="{{asset('css/jquery.mCustomScrollbar.min.css')}}" rel="stylesheet">
+        <!-- Plugins for this template -->
+        <link href="{{asset('css/animate.css')}}" rel="stylesheet">
+        <link href="{{asset('css/owl.carousel.css')}}" rel="stylesheet">
+        <link href="{{asset('css/owl.theme.css')}}" rel="stylesheet">
+        <link href="{{asset('css/slick.css')}}" rel="stylesheet">
+        <link href="{{asset('css/slick-theme.css')}}" rel="stylesheet">
+        <link href="{{asset('css/owl.transitions.css')}}" rel="stylesheet">
+        <link href="{{asset('css/jquery.fancybox.css')}}" rel="stylesheet">
+        <link href="{{asset('css/jquery.mCustomScrollbar.min.css')}}" rel="stylesheet">
 
-    <!-- Custom styles for this template -->
-    <link href="{{asset('sass/style.css')}}" rel="stylesheet">
-    <link rel="stylesheet" href="{{asset('css/customstyle.css')}}">
+        <!-- Custom styles for this template -->
+        <link href="{{asset('sass/style.css')}}" rel="stylesheet">
+        <link rel="stylesheet" href="{{asset('css/customstyle.css')}}">
 
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
 
 </head>
 
@@ -258,62 +258,22 @@
             <div class="row">
                 <div class="col col-xs-12">
                     <div class="services-grids service-slider dots-s1">
-                        <div class="grid">
-                            <div class="inner mk-bg-img">
-                                <div class="details ">
-                                    <div class="info">
-                                        <img src="{{'images/services/img-1.jpg'}}" alt class="bg-image">
-                                        <a href="service-single.html">
-                                            <h3><i class="fi flaticon-construction"></i> کارهای مکانیکی</h3>
-                                        </a>
-                                        <p>کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان</p>
-                                        <a href="service-single.html" class="more">دریافت جزئیات</a>
+                        @foreach($services as $service)
+                            <div class="grid">
+                                <div class="inner mk-bg-img">
+                                    <div class="details ">
+                                        <div class="info">
+                                            <img src="{{$service->thumbnail}}" alt class="bg-image">
+                                            <a href="service-single.html">
+                                                <h3><i class="fi flaticon-construction"></i>{{$service->title}}</h3>
+                                            </a>
+                                            <p>{{$service->description}}</p>
+                                            <a href="service-single.html" class="more">دریافت جزئیات</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="grid">
-                            <div class="inner mk-bg-img">
-                                <div class="details ">
-                                    <div class="info">
-                                        <img src="{{asset('images/services/img-2.jpg')}}" alt class="bg-image">
-                                        <a href="service-single.html">
-                                            <h3><i class="fi flaticon-construction"></i> انرژی و قدرت</h3>
-                                        </a>
-                                        <p>کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان</p>
-                                        <a href="service-single.html" class="more">دریافت جزئیات</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="grid">
-                            <div class="inner mk-bg-img">
-                                <div class="details ">
-                                    <div class="info">
-                                        <img src="{{asset('images/services/img-3.jpg')}}" alt class="bg-image">
-                                        <a href="service-single.html">
-                                            <h3><i class="fi flaticon-construction"></i> پالایشگاه نفت</h3>
-                                        </a>
-                                        <p>کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان</p>
-                                        <a href="service-single.html" class="more">دریافت جزئیات</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="grid">
-                            <div class="inner mk-bg-img">
-                                <div class="details ">
-                                    <div class="info">
-                                        <img src="{{asset('images/services/img-1.jpg')}}" alt class="bg-image">
-                                        <a href="service-single.html">
-                                            <h3><i class="fi flaticon-construction"></i> کارهای مکانیکی</h3>
-                                        </a>
-                                        <p>کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان</p>
-                                        <a href="service-single.html" class="more">دریافت جزئیات</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        @endforeach
                     </div> <!-- end services-grids -->
                 </div> <!-- end col -->
             </div> <!-- end row -->
@@ -373,218 +333,6 @@
     </section>
     <!-- end testimonials -->
 
-
-    <!-- start offer -->
-    <section class="section-padding">
-        <div class="container">
-            <div class="row">
-                <div class="col col-md-4">
-                    <div class="section-title">
-                        <h2>پیشنهادهای ما</h2>
-                    </div>
-                    <div class="offer-text">
-                        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک
-                            است. چاپگرها و متون بلکه روزنامه و مجله </p>
-                        <p>در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با
-                            هدف بهبود ابزارهای کاربردی می باشد. </p>
-                        <a href="#" class="theme-btn read-more">بیشتر بدانید</a>
-                    </div>
-                </div>
-                <div class="col col-md-8">
-                    <div class="offer-grids">
-                        <div class="grid">
-                            <div class="details">
-                                <div class="icon">
-                                    <i class="fi flaticon-construction"></i>
-                                </div>
-                                <h3>تکنولوژی پیشرفته</h3>
-                                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
-                                    گرافیک است. </p>
-                                <a href="#" class="offer-details">جزئیات <i class="fa fa-angle-left"></i></a>
-                            </div>
-                        </div>
-                        <div class="grid">
-                            <div class="details">
-                                <div class="icon">
-                                    <i class="fi flaticon-people"></i>
-                                </div>
-                                <h3>مهندسان متخصص</h3>
-                                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
-                                    گرافیک است. </p>
-                                <a href="#" class="offer-details">جزئیات <i class="fa fa-angle-left"></i></a>
-                            </div>
-                        </div>
-                        <div class="grid">
-                            <div class="details">
-                                <div class="icon">
-                                    <i class="fi flaticon-support"></i>
-                                </div>
-                                <h3>پشتیبانی حرفه ای</h3>
-                                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
-                                    گرافیک است. </p>
-                                <a href="#" class="offer-details">جزئیات <i class="fa fa-angle-left"></i></a>
-                            </div>
-                        </div>
-                        <div class="grid">
-                            <div class="details">
-                                <div class="icon">
-                                    <i class="fi flaticon-time-passing"></i>
-                                </div>
-                                <h3>تحویل به موقع</h3>
-                                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
-                                    گرافیک است. </p>
-                                <a href="#" class="offer-details">جزئیات <i class="fa fa-angle-left"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div> <!-- end row -->
-        </div> <!-- end container -->
-    </section>
-    <!-- end offer -->
-
-
-    <!-- recent-project -->
-    <section class="recent-projects section-padding">
-        <div class="container">
-            <div class="row">
-                <div class="col col-lg-8 col-lg-offset-2">
-                    <div class="section-title-s2">
-                        <h2>پروژه های اخیر</h2>
-                        <p>چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی
-                            تکنولوژی مورد نیاز و کاربردهای متنوع </p>
-                    </div>
-                </div>
-            </div> <!-- end row -->
-        </div>
-
-        <div class="row">
-            <div class="col col-xs-12">
-                <div class="recent-projects-grids">
-                    <div class="grid">
-                        <div class="project-img">
-                            <img src="{{'images/projects/img-1.jpg'}}" alt>
-                        </div>
-                        <div class="project-info">
-                            <div class="inner-info">
-                                <a href="#">
-                                    <h3>پالایشگاه شیمیایی</h3>
-                                </a>
-                                <div class="tags">میشیگان، آمریکا</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="grid">
-                        <div class="project-img">
-                            <img src="{{asset('images/projects/img-2.jpg')}}" alt>
-                        </div>
-                        <div class="project-info">
-                            <div class="inner-info">
-                                <a href="#">
-                                    <h3>پالایشگاه شیمیایی</h3>
-                                </a>
-                                <div class="tags">میشیگان، آمریکا</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="grid">
-                        <div class="project-img">
-                            <img src="{{asset('images/projects/img-3.jpg')}}" alt>
-                        </div>
-                        <div class="project-info">
-                            <div class="inner-info">
-                                <a href="#">
-                                    <h3>پالایشگاه شیمیایی</h3>
-                                </a>
-                                <div class="tags">میشیگان، آمریکا</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="grid">
-                        <div class="project-img">
-                            <img src="{{asset('images/projects/img-4.jpg')}}" alt>
-                        </div>
-                        <div class="project-info">
-                            <div class="inner-info">
-                                <a href="#">
-                                    <h3>پالایشگاه شیمیایی</h3>
-                                </a>
-                                <div class="tags">میشیگان، آمریکا</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="grid">
-                        <div class="project-img">
-                            <img src="{{asset('images/projects/img-5.jpg')}}" alt>
-                        </div>
-                        <div class="project-info">
-                            <div class="inner-info">
-                                <a href="#">
-                                    <h3>پالایشگاه شیمیایی</h3>
-                                </a>
-                                <div class="tags">میشیگان، آمریکا</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="grid">
-                        <div class="project-img">
-                            <img src="{{asset('images/projects/img-2.jpg')}}" alt>
-                        </div>
-                        <div class="project-info">
-                            <div class="inner-info">
-                                <a href="#">
-                                    <h3>پالایشگاه شیمیایی</h3>
-                                </a>
-                                <div class="tags">میشیگان، آمریکا</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="grid">
-                        <div class="project-img">
-                            <img src="{{asset('images/projects/img-3.jpg')}}" alt>
-                        </div>
-                        <div class="project-info">
-                            <div class="inner-info">
-                                <a href="#">
-                                    <h3>پالایشگاه شیمیایی</h3>
-                                </a>
-                                <div class="tags">میشیگان، آمریکا</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="grid">
-                        <div class="project-img">
-                            <img src="{{asset('images/projects/img-4.jpg')}}" alt>
-                        </div>
-                        <div class="project-info">
-                            <div class="inner-info">
-                                <a href="#">
-                                    <h3>پالایشگاه شیمیایی</h3>
-                                </a>
-                                <div class="tags">میشیگان، آمریکا</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="grid">
-                        <div class="project-img">
-                            <img src="{{asset('images/projects/img-5.jpg')}}" alt>
-                        </div>
-                        <div class="project-info">
-                            <div class="inner-info">
-                                <a href="#">
-                                    <h3>پالایشگاه شیمیایی</h3>
-                                </a>
-                                <div class="tags">میشیگان، آمریکا</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- end recent-project -->
-
-
     <!-- start about-us-faq -->
     <section class="section-padding about-us-faq">
         <div class="container">
@@ -628,20 +376,19 @@
                             <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
                                 گرافیک است. چاپگرها و متون بلکه</p>
                             <div class="panel-group faq-accordion theme-accordion-s1" id="accordion">
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
-                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"
-                                           aria-expanded="true">کتابهای زیادی در شصت و سه درصد گذشته</a>
-                                    </div>
-                                    <div id="collapseOne" class="panel-collapse collapse in">
-                                        <div class="panel-body">
-                                            <p>کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه
-                                                و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان
-                                                رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد
-                                                کرد. </p>
+                                @foreach($faqs as $faq)
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"
+                                               aria-expanded="true">{{$faq->question}}</a>
+                                        </div>
+                                        <div id="collapseOne" class="panel-collapse collapse in">
+                                            <div class="panel-body">
+                                                <p>{{$faq->answer}}</p>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
+                                @endforeach
 
                                 <div class="panel panel-default">
                                     <div class="panel-heading">
@@ -712,80 +459,6 @@
         </div> <!-- end container -->
     </section>
     <!-- end partners -->
-
-
-    <!-- start contact-section -->
-    <section class="contact-section section-padding parallax" data-bg-image="assets/images/contact-section-bg.jpg">
-        <div class="container">
-            <div class="row">
-                <div class="col col-md-4 col-md-offset-1 col-md-5">
-                    <div class="contact-section-contact-box">
-                        <div class="section-title-white">
-                            <h2>تماس</h2>
-                        </div>
-                        <div class="details">
-                            <p>برای هر نوع پرس و جو، با راه های زیر تماس بگیرید.</p>
-                            <ul>
-                                <li><i class="fa fa-phone"></i> +123 (569) 254 78</li>
-                                <li><i class="fa fa-envelope"></i> info@karbarwp.com</li>
-                                <li><i class="fa fa-home"></i> ایران، تهران بزرگ، تهران، میدان آزادی</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col col-lg-6 col-lg-offset-1 col-md-7">
-                    <div class="section-title-white">
-                        <h2>درخواست مشاوره</h2>
-                    </div>
-                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
-                    </p>
-
-                    <div class="contact-form-s1 form">
-                        <form method="post" id="contact-form" class="wpcf7-form contact-validation-active">
-                            <div>
-                                <label for="name">نام کامل</label>
-                                <input type="text" id="name" name="name">
-                            </div>
-                            <div>
-                                <label for="email">ایمیل</label>
-                                <input type="email" id="email" name="email">
-                            </div>
-                            <div>
-                                <label for="phone">شماره موبایل</label>
-                                <input type="text" id="phone" name="phone">
-                            </div>
-                            <div>
-                                <label>نوع بیزینس</label>
-                                <select name="select">
-                                    <option selected disabled> -- یکی را انتخاب کنید--</option>
-                                    <option value="انتخاب یک">انتخاب یک</option>
-                                    <option value="انتخاب دو">انتخاب دو</option>
-                                    <option value="انتخاب سه">انتخاب سه</option>
-                                </select>
-                            </div>
-                            <div class="submit-btn-wrap">
-                                <input value="ارسال" class="theme-btn wpcf7-submit" type="submit">
-                                <div id="loader">
-                                    <i class="fa fa-refresh fa-spin fa-3x fa-fw"></i>
-                                </div>
-                            </div>
-                            <div class="error-handling-messages">
-                                <div id="success">با سپاس از شما</div>
-                                <div id="error">هنگام ارسال ایمیل خطایی رخ داد. لطفا بعدا دوباره امتحان کنید.</div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div> <!-- end row -->
-        </div> <!-- end container -->
-        <div class="contact-women wow fadeInLeft">
-            <img src="assets/images/contact-women.png" alt>
-        </div>
-    </section>
-    <!-- end contact-section -->
-
-
     <!-- news-section -->
     <section class="section-padding">
         <div class="container">
@@ -809,63 +482,27 @@
             <div class="row">
                 <div class="col col-xs-12">
                     <div class="news-grids">
-                        <div class="grid">
-                            <div class="entry-media">
-                                <img src="{{asset('images/blog/img-1.jpg')}}" alt>
-                            </div>
-                            <div class="entry-details">
-                                <div class="entry-meta">
-                                    <ul>
-                                        <li><i class="fa fa-clock-o"></i>01 مرداد</li>
-                                        <li><i class="fa fa-comments"></i><a href="#">نظرات 2</a></li>
-                                    </ul>
+                        @foreach($blogs as $blog)
+                            <div class="grid">
+                                <div class="entry-media">
+                                    <img src="{{$blog->thumbnail}}" alt>
                                 </div>
-                                <div class="entry-body">
-                                    <h3><a href="#">درآمد صنعتی چین در هشت ماه اول رشد سریع تر است</a>
-                                    </h3>
-                                    <p>با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="grid">
-                            <div class="entry-media">
-                                <img src="{{asset('images/blog/img-2.jpg')}}" alt>
-                            </div>
-                            <div class="entry-details">
-                                <div class="entry-meta">
-                                    <ul>
-                                        <li><i class="fa fa-clock-o"></i>01 مرداد</li>
-                                        <li><i class="fa fa-comments"></i><a href="#">نظرات 2</a></li>
-                                    </ul>
-                                </div>
-                                <div class="entry-body">
-                                    <h3><a href="#">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</a>
-                                    </h3>
-                                    <p>با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله
-                                    </p>
+                                <div class="entry-details">
+                                    <div class="entry-meta">
+                                        <ul>
+                                            <li><i class="fa fa-clock-o"></i>{{$blog->created_at}}</li>
+                                        </ul>
+                                    </div>
+                                    <div class="entry-body">
+                                        <h3><a href="#">{{$blog->title}}</a>
+                                        </h3>
+                                        <p>{{$blog->description}}
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="grid">
-                            <div class="entry-media">
-                                <img src="{{asset('images/blog/img-3.jpg')}}" alt>
-                            </div>
-                            <div class="entry-details">
-                                <div class="entry-meta">
-                                    <ul>
-                                        <li><i class="fa fa-clock-o"></i>01 مرداد</li>
-                                        <li><i class="fa fa-comments"></i><a href="#">نظرات 2</a></li>
-                                    </ul>
-                                </div>
-                                <div class="entry-body">
-                                    <h3><a href="#">رانندگان اتوبوس در لیورپول رای دادن به اقدامات صنعتی هستند</a>
-                                    </h3>
-                                    <p>با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
+                        @endforeach
+
                     </div>
                 </div>
             </div>
