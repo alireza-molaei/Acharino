@@ -1,0 +1,25 @@
+@font-face {
+    font-family: iransans;
+    src: url("../fonts/iransans/iransans-medium.eot") format("eot");
+    src: url("../fonts/iransans/iransans-medium.woff") format("woff");
+    src: url("../fonts/iarnsans/iransans-medium.woff2") format("woff2");
+  }
+  @font-face {
+    font-family: iransans-bold;
+    src: url("../fonts/iarnsans/iransans-bold.woff") format("woff");
+  }
+  @font-face {
+    font-family: yekan;
+    src: url("../fonts/yekan/YekanBakh-Bold.woff") format("woff");
+  }
+  @font-face {
+    font-family: pinar-bold;
+    src: url("../fonts/pinar/Pinar-DS4-Bold.woff2") format("woff2");
+  }
+  @font-face {
+    font-family: pinar-norm;
+    src: url("../fonts/pinar/Pinar-DS4-Medium.woff2") format("woff2");
+  }
+body{
+    font-family: iransans !important;
+}
