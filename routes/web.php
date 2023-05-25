@@ -12,4 +12,8 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-Route::get('index',[App\Http\Controllers\IndexController::class,'index']);
+Route::get('/',[App\Http\Controllers\IndexController::class,'index']);
+Route::get('services',[App\Http\Controllers\ServicesController::class,'index']);
+Route::get('blogs',[App\Http\Controllers\BlogsController::class,'index']);
+Route::get('about',[\App\Http\Controllers\AboutController::class,'index']);
+Route::get('contact',[App\Http\Controllers\ContactController::class,'index']);
