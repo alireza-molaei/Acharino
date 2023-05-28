@@ -19,6 +19,20 @@
     <section class="contact-pg-section section-padding">
         <div class="container">
             <div class="row">
+                @if (session('alert'))
+                    <div class="alert alert-success">
+                        {{ session('alert') }}
+                    </div>
+                @endif
+                    @if ($errors->any())
+                        <div class="alert alert-danger">
+                            <ul>
+                                @foreach ($errors->all() as $error)
+                                    <li>{{ $error }}</li>
+                                @endforeach
+                            </ul>
+                        </div>
+                    @endif
                 <div class="col col-md-3">
                     <div class="contact-info">
                         <ul>
@@ -49,26 +63,27 @@
             </div> <!-- end row -->
             <div class="row">
                 <div class="col col-xs-12">
-                    <form class="contact-form form contact-validation-active row" id="contact-form-s2">
+                    <form action="{{route('contact.store')}}" method="POST" class="contact-form form contact-validation-active row" >
+                        @csrf
                         <div class="col col-sm-6">
-                            <label for="f-name">نام</label>
-                            <input type="text" class="form-control" id="f-name" name="f_name">
+                            <label for="name">نام</label>
+                            <input type="text" class="form-control" name="name" value="{{old('name')}}">
                         </div>
                         <div class="col col-sm-6">
-                            <label for="l-name">نام خانوادگی</label>
-                            <input type="text" class="form-control" id="l-name" name="l_name">
+                            <label for="family">نام خانوادگی</label>
+                            <input type="text" class="form-control"  name="family" value="{{old('family')}}">
                         </div>
                         <div class="col col-sm-6">
                             <label for="email">ایمیل</label>
-                            <input type="email" class="form-control" id="email" name="email">
+                            <input type="email" class="form-control"  name="email" value="{{old('email')}}">
                         </div>
                         <div class="col col-sm-6">
                             <label for="phone">شماره تلفن</label>
-                            <input type="text" class="form-control" id="phone" name="phone">
+                            <input type="text" class="form-control"  name="phone-number" value="{{old('phone-number')}}">
                         </div>
                         <div class="col col-sm-12">
                             <label for="message">پیام</label>
-                            <textarea class="form-control" id="message" name="note"></textarea>
+                            <textarea class="form-control" name="message">{{old('message')}}</textarea>
                         </div>
                         <div class="col col-sm-12 submit-btn">
                             <button class="theme-btn">ارسال</button>
