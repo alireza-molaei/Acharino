@@ -79,7 +79,7 @@
                     </div>
                     <div class="col col-lg-3 col-md-3">
                         <div class="all-service-link">
-                            <a href="services.html" class="theme-btn">همه خدمات</a>
+                            <a href="{{route('services')}}" class="theme-btn">همه خدمات</a>
                         </div>
                     </div>
                 </div> <!-- end row -->
@@ -93,11 +93,11 @@
                                         <div class="details ">
                                             <div class="info">
                                                 <img src="{{$service->thumbnail}}" alt class="bg-image">
-                                                <a href="service-single.html">
+                                                <a href="{{route('service-'.$service->id)}}">
                                                     <h3><i class="fi flaticon-construction"></i>{{$service->title}}</h3>
                                                 </a>
                                                 <p>{{$service->description}}</p>
-                                                <a href="service-single.html" class="more">دریافت جزئیات</a>
+                                                <a href="{{route('service-'.$service->id)}}" class="more">دریافت جزئیات</a>
                                             </div>
                                         </div>
                                     </div>
@@ -112,11 +112,31 @@
 
 
         <!-- start testimonials -->
-        <section class="testimonials section-padding parallax" data-bg-image="assets/images/testimonials/bg.jpg">
+        <section class="testimonials section-padding parallax" data-bg-image="{{asset('images/testimonials/bg.jpg')}}">
             <div class="container">
                 <div class="row">
                     <div class="col col-xs-12">
                         <div class="testimonials-slider slider-arrow-s1">
+
+                                <div class="slide-item">
+                                    <div class="inner">
+                                        <div class="client-quote">
+                                            <p>در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و
+                                                شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و
+                                                جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
+                                            </p>
+                                        </div>
+                                        <div class="client-details">
+                                            <div class="client-pic">
+                                                <img src="{{asset('images/testimonials/client.jpg')}}" alt>
+                                            </div>
+                                            <div class="client-info">
+                                                <h4>علیرضا ملائی</h4>
+                                                <span>مدیر هیئت مدیره، Acharino</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             <div class="slide-item">
                                 <div class="inner">
                                     <div class="client-quote">
@@ -130,31 +150,13 @@
                                             <img src="{{asset('images/testimonials/client.jpg')}}" alt>
                                         </div>
                                         <div class="client-info">
-                                            <h4>کاربر وردپرس</h4>
-                                            <span>مدیر هیئت مدیره، Machinima</span>
+                                            <h4>حسن کریمی</h4>
+                                            <span>مدیر هیئت مدیره، Acharino</span>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="slide-item">
-                                <div class="inner">
-                                    <div class="client-quote">
-                                        <p>در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و
-                                            شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و
-                                            جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
-                                        </p>
-                                    </div>
-                                    <div class="client-details">
-                                        <div class="client-pic">
-                                            <img src="{{asset('images/testimonials/client.jpg')}}" alt>
-                                        </div>
-                                        <div class="client-info">
-                                            <h4>کاربر وردپرس</h4>
-                                            <span>مدیر هیئت مدیره، Machinima</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+
                         </div>
                     </div>
                 </div>

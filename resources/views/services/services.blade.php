@@ -36,37 +36,19 @@
                                         <div class="details ">
                                             <div class="info">
                                                 <img src="{{$service->thumbnail}}" alt class="bg-image">
-                                                <a href="service-single.html">
+                                                <a href="{{route('service-'.$service->id)}}">
                                                     <h3><i class="fi flaticon-construction"></i>{{$service->title}}</h3>
                                                 </a>
                                                 <p>{{$service->description}}</p>
-                                                <a href="service-single.html" class="more">دریافت جزئیات</a>
+                                                <a href="{{route('service-'.$service->id)}}" class="more">دریافت جزئیات</a>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             @endforeach
-                            <div class="inner mk-bg-img">
-                                <div class="details ">
-                                    <div class="info">
-                                        <img src="assets/images/services/img-4.jpg" alt class="bg-image">
-                                        <a href="service-single.html">
-                                            <h3><i class="fi flaticon-construction"></i> Material Engineering</h3>
-                                        </a>
-                                        <p>کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان</p>
-                                        <a href="service-single.html" class="more">دریافت جزئیات</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
                     </div> <!-- end services-grids -->
                 </div> <!-- end col -->
             </div> <!-- end row -->
-
-            <div class="all-services">
-                <a href="#" class="theme-btn">Load More</a>
-            </div>
     </div> <!-- end container -->
     </section>
     <!-- end of services -->
