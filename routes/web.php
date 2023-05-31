@@ -16,9 +16,9 @@ use Illuminate\Support\Facades\Route;
 */
 Route::get('/', [App\Http\Controllers\IndexController::class, 'index'])->name('index');
 Route::get('services', [App\Http\Controllers\ServicesController::class, 'index'])->name('services');
-Route::get('blogs', [App\Http\Controllers\BlogsController::class, 'index']);
+Route::get('blogs', [App\Http\Controllers\BlogsController::class, 'index'])->name('blogs');
 Route::get('about', [AboutController::class, 'index']);
-Route::get('/contact/create', [App\Http\Controllers\ContactController::class, 'create'])->name('contact.create');
+Route::get('contact/create', [App\Http\Controllers\ContactController::class, 'create'])->name('contact.create');
 Route::post('contact', [ContactController::class, 'store'])->name('contact.store');
 Route::get('carservice', function () {
     return view('services.service-1');
@@ -38,3 +38,6 @@ Route::get('mathinservice', function () {
 Route::get('gazservice', function () {
     return view('services.service-6');
 })->name('service-6');
+Route::get('about',function (){
+   return view('about.about');
+})->name('about');
