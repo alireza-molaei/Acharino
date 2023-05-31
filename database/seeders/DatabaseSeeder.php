@@ -12,9 +12,9 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        \App\Models\service::factory()->create();
-        \App\Models\Blog::factory()->create();
-        \App\Models\faq::factory()->create();
-        \App\Models\contact::factory()->create();
+        \App\Models\service::factory()->count(15)->create();
+        \App\Models\Blog::factory()->count(15)->create();
+        \App\Models\faq::factory()->count(15)->create();
+        \App\Models\contact::factory()->count(15);
     }
 }

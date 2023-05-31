@@ -44,7 +44,7 @@
                 </div>
 
                 <div class="slide">
-                    <img src="{{'images/slider/slide-3.jpg'}}" alt class="slider-bg">
+                    <img src="{{asset('images/slider/slide-3.jpg')}}" alt class="slider-bg">
                     <div class="container">
                         <div class="row">
                             <div class="col col-lg-8 col-sm-9 slide-caption">
@@ -182,8 +182,7 @@
                                     گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و
                                     برای شرایط فعلی تکنولوژی </p>
                                 <div class="btns">
-                                    <a href="#" class="theme-btn-s3">بیشتر بدانید</a>
-                                    <a href="#" class="theme-btn-s4">تاریخچه شرکت</a>
+                                    <a href="{{route('about')}}" class="theme-btn-s3">بیشتر بدانید</a>
                                 </div>
                             </div>
                             <div class="social">
@@ -210,45 +209,16 @@
                                     @foreach($faqs as $faq)
                                         <div class="panel panel-default">
                                             <div class="panel-heading">
-                                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"
-                                                   aria-expanded="true">{{$faq->question}}</a>
+                                                <a data-toggle="collapse" data-parent="#accordion" href="{{ '#collapse'.$faq->id }}"
+                                                   aria-expanded="false">{{$faq->question}}</a>
                                             </div>
-                                            <div id="collapseOne" class="panel-collapse collapse in">
+                                            <div id="{{ 'collapse'.$faq->id }}" class="panel-collapse collapse in">
                                                 <div class="panel-body">
                                                     <p>{{$faq->answer}}</p>
                                                 </div>
                                             </div>
                                         </div>
                                     @endforeach
-
-                                    <div class="panel panel-default">
-                                        <div class="panel-heading">
-                                            <a class="collapsed" data-toggle="collapse" data-parent="#accordion"
-                                               href="#collapseTwo">در این صورت می توان امید داشت</a>
-                                        </div>
-                                        <div id="collapseTwo" class="panel-collapse collapse">
-                                            <div class="panel-body">
-                                                <p>در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه
-                                                    راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی
-                                                    دستاوردهای اصلی و جوابگوی سوالات</p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="panel panel-default">
-                                        <div class="panel-heading">
-                                            <a class="collapsed" data-toggle="collapse" data-parent="#accordion"
-                                               href="#collapseThree">لورم ایپسوم متن ساختگی با تولید سادگی</a>
-                                        </div>
-                                        <div id="collapseThree" class="panel-collapse collapse">
-                                            <div class="panel-body">
-                                                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
-                                                    استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در
-                                                    ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و
-                                                    کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. </p>
-                                            </div>
-                                        </div>
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -264,7 +234,6 @@
 
         <!-- start partners -->
         <section class="section-padding partners">
-            <h2 class="hidden">همکاران</h2>
             <div class="container">
                 <div class="row">
                     <div class="col col-xs-12">
@@ -305,7 +274,7 @@
                     </div>
                     <div class="col col-lg-3 col-md-3">
                         <div class="all-news-link">
-                            <a href="#" class="theme-btn">اخبار بیشتر</a>
+                            <a href="{{route('blogs')}}" class="theme-btn">اخبار بیشتر</a>
                         </div>
                     </div>
                 </div> <!-- end row -->
@@ -325,7 +294,7 @@
                                             </ul>
                                         </div>
                                         <div class="entry-body">
-                                            <h3><a href="#">{{$blog->title}}</a>
+                                            <h3 class="blog-custom-style"><a href="#">{{$blog->title}}</a>
                                             </h3>
                                             <p>{{$blog->description}}
                                             </p>
@@ -340,93 +309,6 @@
             </div> <!-- end container -->
         </section>
         <!-- end news-section -->
-
-
-        <!-- start site-footer -->
-        <footer class="site-footer">
-            <div class="upper-footer">
-                <div class="container">
-                    <div class="row">
-                        <div class="col col-md-3 col-sm-6">
-                            <div class="widget about-widget">
-                                <div class="footer-logo"><img src="{{asset('images/logo.png')}}" alt></div>
-                                <ul class="contact-info">
-                                    <li><i class="fa fa-home"></i> ایران، تهران بزرگ، تهران، میدان آزادی</li>
-                                    <li><i class="fa fa-phone"></i> +1-(547)-257</li>
-                                    <li><i class="fa fa-home"></i> ساعات کاری: <br>ش - ج (8صبح - 8شب)</li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div class="col col-md-3 col-sm-6">
-                            <div class="widget service-links-widget">
-                                <h3>خدمات</h3>
-                                <ul>
-                                    <li><a href="#">پردازش کشاورزی</a></li>
-                                    <li><a href="#">تحقیقات شیمیایی</a></li>
-                                    <li><a href="#">مهندسی فلز</a></li>
-                                    <li><a href="#">مهندسی مکانیک</a></li>
-                                    <li><a href="#">نفت و گاز</a></li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div class="col col-md-3 col-sm-6">
-                            <div class="widget quick-links-widget">
-                                <h3>ناوبری</h3>
-                                <ul>
-                                    <li><a href="#">صفحه اصلی</a></li>
-                                    <li><a href="#">درباره</a></li>
-                                    <li><a href="#">خدمات</a></li>
-                                    <li><a href="#">پروژه ها</a></li>
-                                    <li><a href="#">تعرفه ها</a></li>
-                                    <li><a href="#">اخبار</a></li>
-                                </ul>
-                                <ul>
-                                    <li><a href="#">گالری</a></li>
-                                    <li><a href="#">تماس با ما</a></li>
-                                    <li><a href="#">حریم خصوصی</a></li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div class="col col-md-3 col-sm-6">
-                            <div class="widget twitter-feed-widget">
-                                <h3>خوراک توییتر</h3>
-                                <ul>
-                                    <li>
-                                        <div class="text">
-                                            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از
-                                                طراحان گرافیک است.</p>
-                                        </div>
-                                        <div class="info-box">
-                                            <i class="fa fa-twitter"></i>
-                                            <strong><a href="#">@Mark Wahlberg</a></strong>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="text">
-                                            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از
-                                                طراحان گرافیک است.</p>
-                                        </div>
-                                        <div class="info-box">
-                                            <i class="fa fa-twitter"></i>
-                                            <strong><a href="#">@Mark Wahlberg</a></strong>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div> <!-- end upper-footer -->
-            <div class="copyright-info">
-                <div class="container">
-                    <p>فارسی و راستچین سازی توسط <a href="https://karbarwp.com">کاربر وردپرس</a></p>
-                </div>
-            </div>
-        </footer>
-        <!-- end site-footer -->
     </div>
     <!-- end of page-wrapper -->
 
@@ -435,6 +317,3 @@
 
 @endsection
 
-
-
-<!-- Mirrored from ghaleblake.ir/themes/industrial-demo/full-width/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 31 Jul 2019 06:45:42 GMT -->

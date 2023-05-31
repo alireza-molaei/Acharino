@@ -11,7 +11,7 @@ class IndexController extends Controller
     public function index()
     {
         $services = Service::all()->take(6);
-        $faqs = faq::all()->random(3);
+        $faqs = faq::all()->take(3);
         $blogs = Blog::latest()->take(3)->get();
         return view('index', compact('services', 'faqs', 'blogs'));
     }

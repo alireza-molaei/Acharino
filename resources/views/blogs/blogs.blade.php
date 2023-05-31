@@ -13,7 +13,7 @@
                     <div class="col col-xs-12">
                         <h2>بلاگ شبکه ای</h2>
                         <ol class="breadcrumb">
-                            <li><a href="index.html">صفحه اصلی</a></li>
+                            <li><a href="{{route('index')}}">صفحه اصلی</a></li>
                             <li>بلاگ شبکه ای</li>
                         </ol>
                     </div>
@@ -26,11 +26,14 @@
         <!-- start blog-grid-section -->
         <section class="blog-grid-section section-padding">
             <div class="container">
+               <div class="row">
+
+
                 <div class="news-grids">
                     @foreach($blogs as $blog)
                         <div class="grid">
                             <div class="entry-media">
-                                <img src="{{$blog->thumbnail}}" alt>
+                                <img class="img-responsive img-thumbnail" src="{{$blog->thumbnail}}" alt>
                             </div>
                             <div class="entry-details">
                                 <div class="entry-meta">
@@ -39,34 +42,23 @@
                                     </ul>
                                 </div>
                                 <div class="entry-body">
-                                    <h3><a href="#">{{$blog->title}}</a>
+                                    <h3 class="blog-custom-style"><a href="#">{{$blog->title}}</a>
                                     </h3>
-                                    <p>{{$blog->description}}
-                                    </p>
+                                    <span class="small">{{$blog->description}}
+                                    </span>
                                 </div>
                             </div>
                         </div>
                     @endforeach
-                </div> <!-- end news-grids -->
+                    <div class="text-center">
 
-                <div class="pagination-wrapper">
-                    <ul class="pg-pagination">
-                        <li>
-                            <a href="#" aria-label="Previous">
-                                <i class="fa fa-angle-double-right"></i>
-                            </a>
-                        </li>
-                        <li class="active"><a href="#">1</a></li>
-                        <li><a href="#">2</a></li>
-                        <li><a href="#">3</a></li>
-                        <li>
-                            <a href="#" aria-label="Next">
-                                <i class="fa fa-angle-double-left"></i>
-                            </a>
-                        </li>
-                    </ul>
+                        {{$blogs->links()}}
+                    </div>
+               </div><!-- end news-grids -->
                 </div>
-            </div> <!-- end container -->
+            </div>
+            <!-- end container -->
+
         </section>
         <!-- end blog-grid-section     -->
 

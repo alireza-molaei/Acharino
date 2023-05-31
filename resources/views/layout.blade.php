@@ -149,26 +149,17 @@
                 <div id="navbar" class="navbar-collapse collapse navigation-holder">
                     <button class="close-navbar"><i class="fa fa-close"></i></button>
                     <ul class="nav navbar-nav">
-                        <li class="menu-item-has-children">
-                            <a href="#">صفحه اصلی</a>
+                        <li>
+                            <a href="{{route('index')}}">صفحه اصلی</a>
                         </li>
-                        <li><a href="services.html">خدمات</a></li>
-                        <li><a href="projects.html">پروژه ها</a></li>
+                        <li><a href="{{route('services')}}">خدمات</a></li>
+                        <li><a href="faq.html">سؤالات متداول</a></li>
 
-                        <li class="menu-item-has-children">
-                            <a href="#">صفحات</a>
-                            <ul class="sub-menu">
-                                <li><a href="service-single.html">توضیحات سرویس</a></li>
-
-                                <li><a href="testimonials.html">مشتریان</a></li>
-                                <li><a href="faq.html">سؤالات متداول</a></li>
-                            </ul>
+                        <li>
+                            <a href="{{route('blogs')}}">بلاگ</a>
                         </li>
-                        <li class="menu-item-has-children">
-                            <a href="blog.html">بلاگ</a>
-                        </li>
-                        <li><a href="about.html">درباره</a></li>
-                        <li><a href="contact.html">تماس</a></li>
+                        <li><a href="{{route('about')}}">درباره</a></li>
+                        <li><a href="{{route('contact.create')}}">تماس</a></li>
                     </ul>
                 </div><!-- end of nav-collapse -->
             </div><!-- end of container -->
@@ -214,15 +205,11 @@
                                 <li><a href="#">صفحه اصلی</a></li>
                                 <li><a href="#">درباره</a></li>
                                 <li><a href="#">خدمات</a></li>
-                                <li><a href="#">پروژه ها</a></li>
-                                <li><a href="#">تعرفه ها</a></li>
+
+                                <li><a href="#">تماس با ما</a></li>
                                 <li><a href="#">اخبار</a></li>
                             </ul>
-                            <ul>
-                                <li><a href="#">گالری</a></li>
-                                <li><a href="#">تماس با ما</a></li>
-                                <li><a href="#">حریم خصوصی</a></li>
-                            </ul>
+
                         </div>
                     </div>
 
@@ -256,11 +243,6 @@
                 </div>
             </div>
         </div> <!-- end upper-footer -->
-        <div class="copyright-info">
-            <div class="container">
-                <p>فارسی و راستچین سازی توسط <a href="https://karbarwp.com">کاربر وردپرس</a></p>
-            </div>
-        </div>
     </footer>
     <!-- end site-footer -->
 </div>
