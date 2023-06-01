@@ -25,15 +25,14 @@
 
         <!-- start blog-grid-section -->
         <section class="blog-grid-section section-padding">
+
             <div class="container">
-               <div class="row">
-
-
+               <div class="row col-xs-12 col-sm-12 col-md-12 col-lg-12">
                 <div class="news-grids">
                     @foreach($blogs as $blog)
                         <div class="grid">
                             <div class="entry-media">
-                                <img class="img-responsive img-thumbnail" src="{{$blog->thumbnail}}" alt>
+                                <img src="{{$blog->thumbnail}}" alt>
                             </div>
                             <div class="entry-details">
                                 <div class="entry-meta">

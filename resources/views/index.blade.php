@@ -282,7 +282,8 @@
                 <div class="row">
                     <div class="col col-xs-12">
                         <div class="news-grids">
-                            @foreach($blogs as $blog)
+                    @foreach($blogs as $blog)
+
                                 <div class="grid">
                                     <div class="entry-media">
                                         <img src="{{$blog->thumbnail}}" alt>

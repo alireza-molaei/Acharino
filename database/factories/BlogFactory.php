@@ -21,7 +21,7 @@ class BlogFactory extends Factory
         return [
             'title' => $this->faker->name(),
             'description' => $this->faker->realText(80),
-            'thumbnail' => 'https://loremflickr.com/359/200?random=' . rand(1, 99)
+            'thumbnail' => 'https://loremflickr.com/422/200?random=' . rand(1, 99)
         ];
     }
 }
