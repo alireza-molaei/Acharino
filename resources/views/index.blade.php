@@ -18,8 +18,8 @@
                                 <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
                                     گرافیک است.</p>
                                 <div class="btns">
-                                    <a href="#" class="theme-btn">درباره ما</a>
-                                    <a href="#" class="theme-btn-s2">کاوش</a>
+                                    <a href="{{route('about')}}" class="theme-btn">درباره ما</a>
+                                    <a href="{{route('contact.create')}}" class="theme-btn-s2">تماس با ما</a>
                                 </div>
                             </div>
                         </div>
@@ -35,8 +35,8 @@
                                 <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
                                     گرافیک است.</p>
                                 <div class="btns">
-                                    <a href="#" class="theme-btn">درباره ما</a>
-                                    <a href="#" class="theme-btn-s2">کاوش</a>
+                                    <a href="{{route('about')}}" class="theme-btn">درباره ما</a>
+                                    <a href="{{route('contact.create')}}" class="theme-btn-s2">تماس با ما</a>
                                 </div>
                             </div>
                         </div>
@@ -52,8 +52,8 @@
                                 <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
                                     گرافیک است.</p>
                                 <div class="btns">
-                                    <a href="#" class="theme-btn">درباره ما</a>
-                                    <a href="#" class="theme-btn-s2">کاوش</a>
+                                    <a href="{{route('about')}}" class="theme-btn">درباره ما</a>
+                                    <a href="{{route('contact.create')}}" class="theme-btn-s2">تماس با ما</a>
                                 </div>
                             </div>
                         </div>
