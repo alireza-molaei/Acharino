@@ -110,7 +110,7 @@
                 <div class="row">
                     <div class="col col-sm-3">
                         <div class="site-logo">
-                            <a href="index.html"><img src="{{asset('images/logo-2.png')}}" alt></a>
+                            <a href="{{route('index')}}"><img src="{{asset('images/logo-2.png')}}" alt></a>
                         </div>
                     </div>
                     <div class="col col-sm-9">
@@ -153,7 +153,7 @@
                             <a href="{{route('index')}}">صفحه اصلی</a>
                         </li>
                         <li><a href="{{route('services')}}">خدمات</a></li>
-                        <li><a href="faq.html">سؤالات متداول</a></li>
+                        <li><a href="{{route('faqs')}}">سؤالات متداول</a></li>
 
                         <li>
                             <a href="{{route('blogs')}}">بلاگ</a>

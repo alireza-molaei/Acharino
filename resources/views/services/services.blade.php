@@ -14,7 +14,7 @@
                     <div class="col col-xs-12">
                         <h2>خدمات</h2>
                         <ol class="breadcrumb">
-                            <li><a href="index.html">صفحه اصلی</a></li>
+                            <li><a href="{{route('index')}}">صفحه اصلی</a></li>
                             <li>خدمات</li>
                         </ol>
                     </div>

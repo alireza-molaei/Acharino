@@ -12,7 +12,7 @@
                 <div class="col col-xs-12">
                     <h2>توضیحات سرویس</h2>
                     <ol class="breadcrumb">
-                        <li><a href="index.html">صفحه اصلی</a></li>
+                        <li><a href="{{route('index')}}">صفحه اصلی</a></li>
                         <li>توضیحات سرویس</li>
                     </ol>
                 </div>
