@@ -42,4 +42,4 @@ Route::get('about',function (){
    return view('about.about');
 })->name('about');
 Route::get('faqs',[\App\Http\Controllers\FaqsController::class,'index'])->name('faqs');
-Route::get('adminpanel',)
+

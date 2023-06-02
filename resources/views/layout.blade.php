@@ -16,33 +16,13 @@
     <title> Acharino </title>
 
     <!-- Favicon and Touch Icons -->
-    <link href="{{asset('images/favicon/favicon.png')}}" rel="shortcut icon" type="image/png">
-    <li
-        )nk href="{{asset('images/favicon/apple-touch-icon-57x57.png')}}" rel="apple-touch-icon" sizes="57x57">
+         <link href="{{asset('images/favicon/favicon.png')}}" rel="shortcut icon" type="image/png">
+        <link href="{{asset('images/favicon/apple-touch-icon-57x57.png')}}" rel="apple-touch-icon" sizes="57x57">
         <link href="{{asset('images/favicon/apple-touch-icon-72x72.png')}}" rel="apple-touch-icon" sizes="72x72">
         <link href="{{asset('images/favicon/apple-touch-icon-114x114.png')}}" rel="apple-touch-icon" sizes="114x114">
         <link href="{{asset('images/favicon/apple-touch-icon-144x144.png')}}" rel="apple-touch-icon" sizes="144x144">
-
-        <!-- Icon fonts -->
-        <link href="{{asset('css/font-awesome.min.css')}}" rel="stylesheet">
-        <link href="{{asset('css/flaticon.css')}}" rel="stylesheet">
-
-        <!-- Bootstrap core CSS -->
-        <link href="{{asset('css/bootstrap.min.css')}}" rel="stylesheet">
-
-        <!-- Plugins for this template -->
-        <link href="{{asset('css/animate.css')}}" rel="stylesheet">
-        <link href="{{asset('css/owl.carousel.css')}}" rel="stylesheet">
-        <link href="{{asset('css/owl.theme.css')}}" rel="stylesheet">
-        <link href="{{asset('css/slick.css')}}" rel="stylesheet">
-        <link href="{{asset('css/slick-theme.css')}}" rel="stylesheet">
-        <link href="{{asset('css/owl.transitions.css')}}" rel="stylesheet">
-        <link href="{{asset('css/jquery.fancybox.css')}}" rel="stylesheet">
-        <link href="{{asset('css/jquery.mCustomScrollbar.min.css')}}" rel="stylesheet">
-
-        <!-- Custom styles for this template -->
+         <link rel="stylesheet" href="{{asset('css/main.css')}}">
         <link href="{{asset('sass/style.css')}}" rel="stylesheet">
-        <link rel="stylesheet" href="{{asset('css/customstyle.css')}}">
 
 
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
