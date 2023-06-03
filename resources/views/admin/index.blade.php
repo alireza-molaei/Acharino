@@ -1,504 +1,462 @@
-
 <!DOCTYPE html>
-<html lang="fa">
-
-<!-- Mirrored from www.karbarwp.ir/ultra-admin/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 08 Apr 2019 06:00:59 GMT -->
+<html lang="fa-IR">
+<!-- Mirrored from www.gold-themes.com/themes/47admin/dashboard.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 Mar 2020 07:32:53 GMT -->
 <head>
-    <!--
-     * @Package: Ultra Admin - Responsive Theme
-     * @Subpackage: Bootstrap
-     * @Version: 1.0
-     * rtl by karbarwp.com
-    -->
-    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
     <meta charset="utf-8" />
-    <title>Acharino admin panel</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <meta content="" name="description" />
-    <meta content="" name="author" />
-
-    <link rel="shortcut icon" href="{{asset('images/favicon.png')}}" type="image/x-icon" />    <!-- Favicon -->
-    <link rel="apple-touch-icon-precomposed" href="{{asset('images/apple-touch-icon-57-precomposed.png')}}">	<!-- For iPhone -->
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{asset('images/apple-touch-icon-114-precomposed.png')}}">    <!-- For iPhone 4 Retina display -->
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{asset('images/apple-touch-icon-72-precomposed.png')}}">    <!-- For iPad -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{asset('images/apple-touch-icon-144-precomposed.png')}}">    <!-- For iPad Retina display -->
-
-
-
-
-    <!-- CORE CSS FRAMEWORK - START -->
-    <link href="{{asset('plugins/pace/pace-theme-flash.css')}}" rel="stylesheet" type="text/css" media="screen"/>
-    <link href="{{asset('plugins/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet" type="text/css"/>
-    <link href="{{asset('plugins/bootstrap/css/bootstrap-theme.min.css')}}" rel="stylesheet" type="text/css"/>
-    <link href="{{asset('fonts/font-awesome/css/font-awesome.css')}}" rel="stylesheet" type="text/css"/>
-    <link href="{{asset('css/animate.min.css')}}" rel="stylesheet" type="text/css"/>
-    <link href="{{asset('plugins/perfect-scrollbar/perfect-scrollbar.css')}}" rel="stylesheet" type="text/css"/>
-    <!-- CORE CSS FRAMEWORK - END -->
-
-    <!-- OTHER SCRIPTS INCLUDED ON THIS PAGE - START -->
-    <!-- OTHER SCRIPTS INCLUDED ON THIS PAGE - END -->
-
-
-    <!-- CORE CSS TEMPLATE - START -->
-    <link href="{{asset('css/style.css')}}" rel="stylesheet" type="text/css"/>
-    <link href="{{asset('css/responsive.css')}}" rel="stylesheet" type="text/css"/>
-    <!-- CORE CSS TEMPLATE - END -->
-
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <meta name="description" content="Bootstrap Admin App" />
+    <meta
+        name="keywords"
+        content="app, responsive, jquery, bootstrap, dashboard, admin"
+    />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <title>Acharnio</title>
+    <!-- =============== VENDOR STYLES ===============-->
+    <!-- FONT AWESOME-->
+    <link
+        rel="stylesheet"
+        href="{{asset('admin/vendor/%40fortawesome/fontawesome-free/css/brands.css')}}"
+    />
+    <link
+        rel="stylesheet"
+        href="{{asset('admin/vendor/%40fortawesome/fontawesome-free/css/regular.css')}}"
+    />
+    <link
+        rel="stylesheet"
+        href="{{asset('admin/vendor/%40fortawesome/fontawesome-free/css/solid.css')}}"
+    />
+    <link
+        rel="stylesheet"
+        href="{{asset('admin/vendor/%40fortawesome/fontawesome-free/css/fontawesome.css')}}"
+    />
+    <!-- ANIMATE.CSS-->
+    <link rel="stylesheet" href="{{asset('admin/vendor/animate.css/animate.css')}}" />
+    <!-- =============== PAGE VENDOR STYLES ===============-->
+    <!-- =============== BOOTSTRAP STYLES ===============-->
+    <link rel="stylesheet" href="{{asset('admin/css/bootstrap.css')}}" id="bscss" />
+    <!-- =============== APP STYLES ===============-->
+    <link rel="stylesheet" href="{{asset('admin/css/app.css')}}" id="maincss" />
+    <link rel="stylesheet" href="{{asset('admin/css/rtl.css')}}" id="rtlcss" />
 </head>
-<!-- END HEAD -->
 
-<!-- BEGIN BODY -->
-<body class=" "><!-- START TOPBAR -->
-<div class='page-topbar '>
-    <div class='logo-area'>
-
-    </div>
-    <div class='quick-area'>
-        <ul class="info-menu left-links list-inline list-unstyled">
-            <li class="sidebar-toggle-wrap">
-                <a href="#" data-toggle="sidebar" class="sidebar_toggle">
-                    <i class="fa fa-bars"></i>
+<body>
+<div class="wrapper">
+    <!-- top navbar-->
+    <header class="topnavbar-wrapper">
+        <!-- START Top Navbar-->
+        <nav class="navbar topnavbar">
+            <!-- START navbar header-->
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#/">
+                    <div class="brand-logo">
+                        <img class="img-fluid" src="img/logo.png" alt="لوگو" />
+                    </div>
+                    <div class="brand-logo-collapsed">
+                        <img class="img-fluid" src="img/logo-single.png" alt="لوگو" />
+                    </div>
                 </a>
-            </li>
-        </ul>
-    </div>
-        <div class='pull-right'>
-            <ul class="info-menu right-links list-inline list-unstyled">
-                <li class="profile">
-                    <a href="#" data-toggle="dropdown" class="toggle">
-                        <img src="data/profile/profile.png" alt="user-image" class="img-circle img-inline">
-                        <span>karbarwp<i class="fa fa-angle-down"></i></span>
-                    </a>
-                    <ul class="dropdown-menu profile animated fadeIn">
-                        <li>
-                            <a href="#settings">
-                                <i class="fa fa-wrench"></i>
-                                تنظیمات
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#profile">
-                                <i class="fa fa-user"></i>
-                                پروفایل
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#help">
-                                <i class="fa fa-info"></i>
-                                راهنما
-                            </a>
-                        </li>
-                        <li class="last">
-                            <a href="ui-login.html">
-                                <i class="fa fa-lock"></i>
-                                خروج
-                            </a>
-                        </li>
-                    </ul>
+            </div>
+            <!-- END navbar header-->
+            <!-- START Right navbar-->
+            <ul class="navbar-nav mr-auto flex-row">
+                <li class="nav-item">
+                    <!-- Button used to collapse the Right sidebar. Only visible on tablet and desktops--><a
+                        class="nav-link d-none d-md-block d-lg-block d-xl-block"
+                        href="#"
+                        data-trigger-resize=""
+                        data-toggle-state="aside-collapsed"
+                    ><em class="fas fa-align-right"></em></a
+                    ><!-- Button to show/hide the sidebar on mobile. Visible on mobile only.--><a
+                        class="nav-link sidebar-toggle d-md-none"
+                        href="#"
+                        data-toggle-state="aside-toggled"
+                        data-no-persist="true"
+                    ><em class="fas fa-align-right"></em
+                        ></a>
                 </li>
             </ul>
-        </div>
-    </div>
-
-</div>
-<!-- END TOPBAR -->
-<!-- START CONTAINER -->
-<div class="page-container row-fluid">
-
-    <!-- SIDEBAR - START -->
-    <div class="page-sidebar ">
-
-
-        <!-- MAIN MENU - START -->
-        <div class="page-sidebar-wrapper" id="main-menu-wrapper">
-
-            <!-- USER INFO - START -->
-
-            <!-- USER INFO - END -->
-
-
-
-            <ul class='wraplist'>
-
-
-                <li class="open">
-                    <a href="index-2.html">
-                        <i class="fa fa-dashboard"></i>
-                        <span class="title">داشبورد</span>
-                    </a>
+            <!-- END Right navbar-->
+            <!-- START Left Navbar-->
+            <ul class="navbar-nav flex-row">
+                <!-- START Messages menu-->
+                <li class="nav-item dropdown dropdown-list">
+                    <!-- START Dropdown menu-->
+                    <div class="dropdown-menu dropdown-menu-right animated bounceIn">
+                        <div class="p-3 text-center"></div>
+                        <!-- END list group-->
+                    </div>
+                    <!-- END Dropdown menu-->
                 </li>
-                <li class="">
-                    <a href="widgets.html">
-                        <i class="fa fa-th"></i>
-                        <span class="title">ابزارک</span>
-                    </a>
+                <!-- START Alert menu-->
+                <li class="nav-item dropdown dropdown-list">
+                    <!-- START Dropdown menu-->
+                    <div class="dropdown-menu dropdown-menu-right animated bounceIn">
+                        <div class="dropdown-item">
+                            <!-- START list group-->
+                            <div class="list-group">
+                                <div class="list-group-item list-group-item-action">
+                                    <div class="media">
+                                        <div class="align-self-start mr-3">
+                                            <em class="fas fa-fire fa-2x"></em>
+                                        </div>
+                                        <div class="media-body">
+                                            <p class="mb-1">آپدیت ها</p>
+                                            <p class="m-0 text-muted">
+                                                <small
+                                                ><strong class="mx-1 text-primary">2</strong>
+                                                    آپدیت جدید وجود دارد</small
+                                                >
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- last list item-->
+                            </div>
+                            <!-- END list group-->
+                        </div>
+                    </div>
+                    <!-- END Dropdown menu-->
                 </li>
-                <li class="">
-                    <a href="javascript:;">
-                        <i class="fa fa-suitcase"></i>
-                        <span class="title">عناصر</span>
-                        <span class="arrow "></span>
-                    </a>
-                    <ul class="sub-menu" >
-                        <li>
-                            <a class="" href="ui-typography.html">تایپوگرافی</a>
-                        </li>
-                        <li>
-                            <a class="" href="ui-accordion.html">زبانه ها</a>
-                        </li>
-                        <li>
-                            <a class="" href="ui-progress.html">نوار پیشرفت</a>
-                        </li>
-                        <li>
-                            <a class="" href="ui-icons.html">آیکن ها</a>
-                        </li>
-                        <li>
-                            <a class="" href="ui-buttons.html">دکمه ها</a>
-                        </li>
-                        <li>
-                            <a class="" href="ui-modals.html">مدل ها</a>
-                        </li>
-                        <li>
-                            <a class="" href="ui-notifications.html">هشدار و ناتفکیشن ها</a>
-                        </li>
-                        <li>
-                            <a class="" href="ui-tooltips.html">راهنمای ابزار و توسعه دهنده</a>
-                        </li>
-                        <li>
-                            <a class="" href="ui-sortable.html">گروه قابل مرتب شدن</a>
-                        </li>
-                        <li>
-                            <a class="" href="ui-navbars.html">نوار منو</a>
-                        </li>
-                        <li>
-                            <a class="" href="ui-extra.html">سایر عناصر</a>
-                        </li>
-                        <li>
-                            <a class="" href="ui-carousel.html">اسلایدر چرخنده</a>
-                        </li>
-                        <li>
-                            <a class="" href="ui-tree.html">Tree</a>
-                        </li>
-                        <li>
-                            <a class="" href="ui-panels.html">پانل های قابل جابجایی</a>
-                        </li>
-                        <li>
-                            <a class="" href="ui-grids.html">شبکه</a>
-                        </li>
-                        <li>
-                            <a class="" href="ui-tiles.html">کاشی ابزارک</a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="">
-                    <a href="javascript:;">
-                        <i class="fa fa-sliders"></i>
-                        <span class="title">فرم ها</span>
-                        <span class="arrow "></span>
-                    </a>
-                    <ul class="sub-menu" >
-                        <li>
-                            <a class="" href="form-elements.html">عناصر فرم ها</a>
-                        </li>
-                        <li>
-                            <a class="" href="form-components.html">اجزای فرم</a>
-                        </li>
-                        <li>
-                            <a class="" href="form-wizard.html">ویزارد فرم</a>
-                        </li>
-                        <li>
-                            <a class="" href="form-validation.html">امکان سنجی فرم</a>
-                        </li>
-                        <li>
-                            <a class="" href="form-fileupload.html">آپلود فایل</a>
-                        </li>
-                        <li>
-                            <a class="" href="form-editors.html">ویرایشگرها</a>
-                        </li>
-                        <li>
-                            <a class="" href="form-masks.html">ماسک ورودی</a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="">
-                    <a href="javascript:;">
-                        <i class="fa fa-gift"></i>
-                        <span class="title">اضافی</span>
-                        <span class="arrow "></span><span class="label label-orange">جدید</span>
-                    </a>
-                    <ul class="sub-menu" >
-                        <li>
-                            <a class="" href="ui-calendar.html">تقویم</a>
-                        </li>
-                        <li>
-                            <a class="" href="ui-pricing.html">جداول قیمت</a>
-                        </li>
-                        <li>
-                            <a class="" href="ui-profile.html">پروفایل</a>
-                        </li>
-                        <li>
-                            <a class="" href="ui-login.html">ورود</a>
-                        </li>
-                        <li>
-                            <a class="" href="ui-register.html">ثبت نام</a>
-                        </li>
-                        <li>
-                            <a class="" href="ui-timeline.html">تایم لاین</a>
-                        </li>
-                        <li>
-                            <a class="" href="ui-invoice.html">فاکتور</a>
-                        </li>
-                        <li>
-                            <a class="" href="ui-members.html">کاربران</a>
-                        </li>
-                        <li>
-                            <a class="" href="ui-gallery.html">گالری</a>
-                        </li>
-                        <li>
-                            <a class="" href="ui-search.html">جستجو</a>
-                        </li>
-                        <li>
-                            <a class="" href="ui-blogs.html">وبلاگ</a>
-                        </li>
-                        <li>
-                            <a class="" href="ui-imagecrop.html">برداشت کننده تصویر</a>
-                        </li>
-                        <li>
-                            <a class="" href="ui-tocify.html">تاکیف</a>
-                        </li>
-                        <li>
-                            <a class="" href="ui-faq.html">پرسش و پاسخ</a>
-                        </li>
-                        <li>
-                            <a class="" href="ui-404.html">404</a>
-                        </li>
-                        <li>
-                            <a class="" href="ui-500.html">500</a>
-                        </li>
-                        <li>
-                            <a class="" href="ui-lockscreen.html">قفل کردن صفحه نمایش</a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="">
-                    <a href="javascript:;">
-                        <i class="fa fa-envelope"></i>
-                        <span class="title">صندوق پستی</span>
-                        <span class="arrow "></span><span class="label label-orange">4</span>
-                    </a>
-                    <ul class="sub-menu" >
-                        <li>
-                            <a class="" href="mail-inbox.html">صندوق ورودی</a>
-                        </li>
-                        <li>
-                            <a class="" href="mail-compose.html">نوشتن</a>
-                        </li>
-                        <li>
-                            <a class="" href="mail-view.html">مشاهده</a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="">
-                    <a href="javascript:;">
-                        <i class="fa fa-bar-chart"></i>
-                        <span class="title">نمودار</span>
-                        <span class="arrow "></span>
-                    </a>
-                    <ul class="sub-menu" >
-                        <li>
-                            <a class="" href="charts-morris.html">نمودارها مورسیس</a>
-                        </li>
-                        <li>
-                            <a class="" href="charts-chartjs.html">نمودار JS</a>
-                        </li>
-                        <li>
-                            <a class="" href="charts-flot.html">نمودار شناور </a>
-                        </li>
-                        <li>
-                            <a class="" href="charts-sparkline.html">خط جرقه نمودار</a>
-                        </li>
-                        <li>
-                            <a class="" href="charts-easypiechart.html">نمودارهای دایره ای </a>
-                        </li>
-                        <li>
-                            <a class="" href="charts-rickshaw.html">نمودار ریکشا </a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="">
-                    <a href="javascript:;">
-                        <i class="fa fa-table"></i>
-                        <span class="title">جداول</span>
-                        <span class="arrow "></span>
-                    </a>
-                    <ul class="sub-menu" >
-                        <li>
-                            <a class="" href="tables-basic.html">جدول پایه</a>
-                        </li>
-                        <li>
-                            <a class="" href="tables-data.html">جداول داده</a>
-                        </li>
-                        <li>
-                            <a class="" href="tables-responsive.html">جداول پاسخگو</a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="">
-                    <a href="javascript:;">
-                        <i class="fa fa-columns"></i>
-                        <span class="title">سبک ها</span>
-                        <span class="arrow "></span>
-                    </a>
-                    <ul class="sub-menu" >
-                        <li>
-                            <a class="" href="layout-default.html">سبک پیشفرض</a>
-                        </li>
-                        <li>
-                            <a class="" href="layout-collapsed.html">منو فروریخته</a>
-                        </li>
-                        <li>
-                            <a class="" href="layout-chat.html">چت باز</a>
-                        </li>
-                        <li>
-                            <a class="" href="layout-boxed.html">سبک جعبه ای</a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="">
-                    <a href="javascript:;">
-                        <i class="fa fa-map-marker"></i>
-                        <span class="title">نقشه ها</span>
-                        <span class="arrow "></span>
-                    </a>
-                    <ul class="sub-menu" >
-                        <li>
-                            <a class="" href="ui-vectormaps.html">نقشه وکتور</a>
-                        </li>
-                        <li>
-                            <a class="" href="ui-googlemaps.html">نقشه گوگل</a>
-                        </li>
-                        <li>
-                            <a class="" href="ui-googlemapfull.html">نقشه گوگل پیشرفته</a>
-                        </li>
-                    </ul>
-                </li>
+                <!-- END Alert menu-->
+                <!-- START Messages menu-->
+                <li class="nav-item dropdown">
+                    <a
+                        class="nav-link dropdown-toggle dropdown-toggle-nocaret"
+                        href="#"
+                        data-toggle="dropdown"
+                    ><em class="fas fa-user"></em></a
+                    ><!-- START Dropdown menu-->
+                    <div class="dropdown-menu dropdown-menu-right animated bounceIn">
+                        <div class="dropdown-divider"></div>
+                        <div class="dropdown-item">پروفایل</div>
+                        <div class="dropdown-item">تنظیمات</div>
 
-                <li class=""> <a href="javascript:;"> <i class="fa fa-folder-open"></i> <span class="title">سطح منو</span> <span class="arrow "></span> </a>
-                    <ul class="sub-menu">
-                        <li > <a href="javascript:;"> <span class="title">سطح 1.1</span> </a> </li>
-                        <li > <a href="javascript:;"> <span class="title">سطح 1.2</span> <span class="arrow "></span> </a>
-                            <ul class="sub-menu">
-                                <li > <a href="javascript:;"> <span class="title">Level 2.1</span> </a></li>
-                                <li > <a href="ujavascript:;"> <span class="title">Level 2.2</span> <span class="arrow "></span></a>
-                                    <ul class="sub-menu">
-                                        <li > <a href="javascript:;"> <span class="title">Level 3.1</span> <span class="arrow "></span></a>
-                                            <ul class="sub-menu">
-                                                <li > <a href="ujavascript:;"> <span class="title">Level 4.1</span> </a> </li>
-                                                <li > <a href="ujavascript:;"> <span class="title">Level 4.2</span> </a> </li>
-                                            </ul>
-                                        </li>
-                                        <li > <a href="ujavascript:;"> <span class="title">Level 3.2</span> </a> </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
+                        <div class="dropdown-item">خروج</div>
+                    </div>
+                    <!-- END Dropdown menu-->
                 </li>
-
             </ul>
+            <!-- END Right Navbar-->
+        </nav>
+        <!-- END Top Navbar-->
+    </header>
+    <!-- sidebar-->
+    <aside class="aside-container">
+        <!-- START Sidebar (Right)-->
+        <div class="aside-inner">
+            <nav class="sidebar" data-sidebar-anyclick-close>
+                <!-- START sidebar nav-->
+                <ul class="sidebar-nav">
+                    <li
+                        class="sidebar-app-logo d-flex align-items-center justify-content-center py-3 d-md-none"
+                    >
+                        <img class="img-fluid" src="img/logo.png" alt="لوگو" />
+                    </li>
+                    <!-- START user info-->
+                    <li class="has-user-block">
+                        <div
+                            id="user-block"
+                            data-toggle="collapse"
+                            data-target="#user-links"
+                        >
+                            <div class="item user-block">
+                                <div class="user-block-content">
+                                    <!-- User picture-->
+                                    <div class="user-block-picture">
+                                        <img
+                                            class="img-thumbnail rounded-circle"
+                                            src="img/user/02.jpg"
+                                            alt="آواتار"
+                                            width="60"
+                                            height="60"
+                                        />
+                                    </div>
+                                    <!-- Name and Job-->
+                                    <div class="user-block-info">
+                        <span class="user-block-name">الکس، خوش اومدی</span
+                        ><span class="user-block-role">طراح</span
+                                        ><!-- START Dropdown to change status-->
 
+                                        <!-- END Dropdown to change status-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- END user info-->
+                    <li class="nav collapse" id="user-links">
+                        <!-- START User links collapse-->
+                        <ul class="sidebar-nav sidebar-subnav">
+                            <li><a href="#">پروفایل</a></li>
+                            <li><a href="#">تنظیمات</a></li>
+
+                            <li><a href="#">خروج</a></li>
+                        </ul>
+                        <!-- END User links collapse-->
+                    </li>
+                    <!-- Iterates over all sidebar items-->
+                    <li class="active">
+                        <a href="dashboard.html" title="داشبورد">
+                            <em class="fas fa-tachometer-alt"></em><span>داشبورد</span>
+                        </a>
+                    </li>
+                    <li class=" ">
+                        <a href="#charts" title="نمودارها" data-toggle="collapse"
+                        ><em class="fas fa-chart-bar"></em><span>نمودارها</span></a
+                        >
+                        <ul class="sidebar-nav sidebar-subnav collapse" id="charts">
+                            <li class="sidebar-subnav-header">نمودارها</li>
+                            <li class=" ">
+                                <a href="chart-flot.html" title="فلات"><span>فلات</span></a>
+                            </li>
+                            <li class=" ">
+                                <a href="chart-radial.html" title="رادیال"
+                                ><span>رادیال</span></a
+                                >
+                            </li>
+                        </ul>
+                    </li>
+                    <li class=" ">
+                        <a href="#tables" title="جداول" data-toggle="collapse"
+                        ><em class="fas fa-table"></em><span>جداول</span></a
+                        >
+                        <ul class="sidebar-nav sidebar-subnav collapse" id="tables">
+                            <li class="sidebar-subnav-header">جداول</li>
+                            <li class=" ">
+                                <a href="table-datatable.html" title="جداول اطلاعات"
+                                ><span>جداول اطلاعات</span></a
+                                >
+                            </li>
+                            <li class=" ">
+                                <a href="table-standard.html" title="استاندارد"
+                                ><span>استاندارد</span></a
+                                >
+                            </li>
+                            <li class=" ">
+                                <a href="table-extended.html" title="گسترده"
+                                ><span>گسترده</span></a
+                                >
+                            </li>
+                        </ul>
+                    </li>
+                    <li class=" ">
+                        <a href="#forms" title="فرم ها" data-toggle="collapse"
+                        ><em class="fas fa-edit"></em><span>فرم ها</span></a
+                        >
+                        <ul class="sidebar-nav sidebar-subnav collapse" id="forms">
+                            <li class="sidebar-subnav-header">فرم ها</li>
+                            <li class=" ">
+                                <a href="form-standard.html" title="استاندارد"
+                                ><span>استاندارد</span></a
+                                >
+                            </li>
+                            <li class=" ">
+                                <a href="form-extended.html" title="گسترده"
+                                ><span>گسترده</span></a
+                                >
+                            </li>
+                            <li class=" ">
+                                <a href="form-validation.html" title="اعتبارسنجی"
+                                ><span>اعتبارسنجی</span></a
+                                >
+                            </li>
+                            <li class=" ">
+                                <a href="form-wizard.html" title="مرحله ای"
+                                ><span>مرحله ای</span></a
+                                >
+                            </li>
+                        </ul>
+                    </li>
+                    <li class=" ">
+                        <a href="#elements" title="المنت ها" data-toggle="collapse"
+                        ><em class="fas fa-wrench"></em><span>المنت ها</span></a
+                        >
+                        <ul class="sidebar-nav sidebar-subnav collapse" id="elements">
+                            <li class="sidebar-subnav-header">المنت ها</li>
+                            <li class=" ">
+                                <a href="cards.html" title="کارت ها"
+                                ><span>کارت ها</span></a
+                                >
+                            </li>
+                            <li class=" ">
+                                <a href="portlets.html" title="پرتلت ها"
+                                ><span>پرتلت ها</span></a
+                                >
+                            </li>
+                            <li class=" ">
+                                <a href="buttons.html" title="دکمه ها"
+                                ><span>دکمه ها</span></a
+                                >
+                            </li>
+                            <li class=" ">
+                                <a href="icons.html" title="آیکون ها"
+                                ><span>آیکون ها</span></a
+                                >
+                            </li>
+                            <li class=" ">
+                                <a href="notifications.html" title="نوتیفیکیشن ها"
+                                ><span>نوتیفیکیشن ها</span></a
+                                >
+                            </li>
+                            <li class=" ">
+                                <a href="typo.html" title="تایپوگرافی"
+                                ><span>تایپوگرافی</span></a
+                                >
+                            </li>
+                            <li class=" ">
+                                <a href="grid.html" title="گرید"><span>گرید</span></a>
+                            </li>
+                            <li class=" ">
+                                <a href="grid-masonry.html" title="گرید Masonry"
+                                ><span>گرید Masonry</span></a
+                                >
+                            </li>
+                            <li class=" ">
+                                <a href="dropdown-animations.html" title="کشویی"
+                                ><span>کشویی</span></a
+                                >
+                            </li>
+                            <li class=" ">
+                                <a href="widgets.html" title="ویجت ها"
+                                ><span>ویجت ها</span></a
+                                >
+                            </li>
+                            <li class=" ">
+                                <a href="maps.html" title="نقشه ها"><span>نقشه ها</span></a>
+                            </li>
+                            <li class=" ">
+                                <a href="calendar.html" title="تقویم"><span>تقویم</span></a>
+                            </li>
+                            <li class=" ">
+                                <a href="spinners.html" title="اسپینرها"
+                                ><span>اسپینرها</span></a
+                                >
+                            </li>
+                        </ul>
+                    </li>
+                    <li class=" ">
+                        <a href="#pages" title="صفحات" data-toggle="collapse"
+                        ><em class="far fa-file-alt"></em><span>صفحات</span></a
+                        >
+                        <ul class="sidebar-nav sidebar-subnav collapse" id="pages">
+                            <li class="sidebar-subnav-header">صفحات</li>
+                            <li class=" ">
+                                <a href="landing.html" title="صفحه فرود"
+                                ><span>صفحه فرود</span></a
+                                >
+                            </li>
+                            <li class=" ">
+                                <a href="login.html" title="ورود"><span>ورود</span></a>
+                            </li>
+                            <li class=" ">
+                                <a href="login-multi.html" title="ورود چندگانه"
+                                ><span>ورود چندگانه</span></a
+                                >
+                            </li>
+                            <li class=" ">
+                                <a href="register.html" title="عضویت"><span>عضویت</span></a>
+                            </li>
+                            <li class=" ">
+                                <a href="lock.html" title="قفل"><span>قفل</span></a>
+                            </li>
+                            <li class=" ">
+                                <a href="recover.html" title="بازیابی رمزعبور"
+                                ><span>بازیابی رمزعبور</span></a
+                                >
+                            </li>
+                            <li class=" ">
+                                <a href="template.html" title="قالب بدون محتوا"
+                                ><span>قالب بدون محتوا</span></a
+                                >
+                            </li>
+                            <li class=" ">
+                                <a href="timeline.html" title="جدول زمانی"
+                                ><span>جدول زمانی</span></a
+                                >
+                            </li>
+                            <li class=" ">
+                                <a href="inbox.html" title="صندوق ورودی پیام"
+                                ><span>صندوق ورودی پیام</span></a
+                                >
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <!-- Sidebar footer-->
+                <div class="nav-footer">
+                    <div class="nav-footer-divider"></div>
+                    <!-- START button group-->
+                    <div class="btn-group text-center">
+                        <button
+                            class="btn btn-link"
+                            type="button"
+                            data-toggle="tooltip"
+                            data-title="ایجاد مخاطب جدید"
+                        >
+                            <em class="fas fa-user text-muted"
+                            ><sup class="fa fa-plus"></sup
+                                ></em></button
+                        ><button
+                            class="btn btn-link"
+                            type="button"
+                            data-toggle="tooltip"
+                            data-title="تنظیمات"
+                        >
+                            <em class="fas fa-cog text-muted"></em></button
+                        ><button
+                            class="btn btn-link"
+                            type="button"
+                            data-toggle="tooltip"
+                            data-title="خروج"
+                        >
+                            <em class="fas fa-sign-out-alt text-muted"></em>
+                        </button>
+                    </div>
+                    <!-- END button group-->
+                </div>
+                <!-- END sidebar nav-->
+            </nav>
         </div>
-        <!-- MAIN MENU - END -->
+        <!-- END Sidebar (Right)-->
+    </aside>
+    <!-- offsidebar-->
 
-
-
-
-
-
-
-    </div>
-    <!--  SIDEBAR - END -->
-    <!-- START CONTENT -->
-
-    <!-- END CONTENT -->
-
-
-
-    <div class="chatapi-windows ">
-
-
-    </div>    </div>
-<!-- END CONTAINER -->
-<!-- LOAD FILES AT PAGE END FOR FASTER LOADING -->
-
-
-<!-- CORE JS FRAMEWORK - START -->
-<script src="{{asset('js/jquery-1.11.2.min.js')}}" type="text/javascript"></script>
-<script src="{{asset('js/jquery.easing.min.js')}}" type="text/javascript"></script>
-<script src="{{asset('plugins/bootstrap/js/bootstrap.min.js')}}" type="text/javascript"></script>
-<script src="{{asset('plugins/pace/pace.min.js')}}" type="text/javascript"></script>
-<script src="{{asset('plugins/perfect-scrollbar/perfect-scrollbar.min.js')}}" type="text/javascript"></script>
-<script src="{{asset('plugins/viewport/viewportchecker.js')}}" type="text/javascript"></script>
-<!-- CORE JS FRAMEWORK - END -->
-
-
-<!-- OTHER SCRIPTS INCLUDED ON THIS PAGE - START -->
-<!-- OTHER SCRIPTS INCLUDED ON THIS PAGE - END -->
-
-
-<!-- CORE TEMPLATE JS - START -->
-<script src="{{asset('js/scripts.js')}}" type="text/javascript"></script>
-<!-- END CORE TEMPLATE JS - END -->
-
-<!-- Sidebar Graph - START -->
-<script src="{{asset('plugins/sparkline-chart/jquery.sparkline.min.js')}}" type="text/javascript"></script>
-<script src="{{asset('js/chart-sparkline.js')}}" type="text/javascript"></script>
-<!-- Sidebar Graph - END -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- General section box modal start -->
-<div class="modal" id="section-settings" tabindex="-1" role="dialog" aria-labelledby="ultraModal-Label" aria-hidden="true">
-    <div class="modal-dialog animated bounceInDown">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="بستن" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <h4 class="modal-title">تنظیمات بخش</h4>
-            </div>
-            <div class="modal-body">
-
-                محل بدنه اینجا ....
-
-            </div>
-            <div class="modal-footer">
-                <button data-dismiss="modal" class="btn btn-default" type="button">بستن</button>
-                <button class="btn btn-success" type="button">ذخیره تنظیمات</button>
-            </div>
-        </div>
-    </div>
+    <!-- Main section-->
 </div>
-<!-- modal end -->
+<!-- =============== VENDOR SCRIPTS ===============-->
+<!-- STORAGE API-->
+<script src="{{asset('admin/vendor/js-storage/js.storage.js')}}"></script>
+<!-- SCREENFULL-->
+<script src="{{asset('admin/vendor/screenfull/dist/screenfull.js')}}"></script>
+<!-- i18next-->
+<script src="{{asset('admin/vendor/i18next/i18next.js')}}"></script>
+<script src="{{asset('admin/vendor/i18next-xhr-backend/i18nextXHRBackend.js')}}"></script>
+<script src="{{asset('admin/vendor/jquery/dist/jquery.js')}}"></script>
+<script src="{{asset('admin/vendor/popper.js/dist/umd/popper.js')}}"></script>
+<script src="{{asset('admin/vendor/bootstrap/dist/js/bootstrap.js')}}"></script>
+<!-- =============== PAGE VENDOR SCRIPTS ===============-->
+<!-- SLIMSCROLL-->
+<script src="{{asset('admin/vendor/jquery-slimscroll/jquery.slimscroll.js')}}"></script>
+<!-- SPARKLINE-->
+<script src="{{asset('admin/vendor/jquery-sparkline/jquery.sparkline.js')}}"></script>
+<!-- FLOT CHART-->
+<script src="{{asset('admin/vendor/flot/jquery.flot.js')}}"></script>
+<script src="{{asset('admin/vendor/jquery.flot.tooltip/js/jquery.flot.tooltip.js')}}"></script>
+<script src="{{asset('admin/vendor/flot/jquery.flot.resize.js')}}"></script>
+<script src="{{asset('admin/vendor/flot/jquery.flot.pie.js')}}"></script>
+<script src="{{asset('admin/vendor/flot/jquery.flot.time.js')}}"></script>
+<script src="{{asset('admin/vendor/flot/jquery.flot.categories.js')}}"></script>
+<script src="{{asset('admin/vendor/flot-spline/js/jquery.flot.spline.js')}}"></script>
+<!-- EASY PIE CHART-->
+<script src="{{asset('admin/vendor/easy-pie-chart/dist/jquery.easypiechart.js')}}"></script>
+<!-- MOMENT JS-->
+<script src="{{asset('admin/vendor/moment/min/moment-with-locales.js')}}"></script>
+<!-- =============== APP SCRIPTS ===============-->
+<script src="{{asset('admin/js/app.js')}}"></script>
 </body>
 
-<!-- Mirrored from www.karbarwp.ir/ultra-admin/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 08 Apr 2019 06:01:49 GMT -->
-
-
-
-
-
-
-<script type="text/javascript">
-
-
-</script>
+<!-- Mirrored from www.gold-themes.com/themes/47admin/dashboard.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 Mar 2020 07:33:29 GMT -->
 </html>
