@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AboutController;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\FaqsController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -38,10 +39,13 @@ Route::get('mathinservice', function () {
 Route::get('gazservice', function () {
     return view('services.service-6');
 })->name('service-6');
-Route::get('about',function (){
-   return view('about.about');
+Route::get('about', function () {
+    return view('about.about');
 })->name('about');
-Route::get('faqs',[\App\Http\Controllers\FaqsController::class,'index'])->name('faqs');
-Route::get('admin-panel',function (){
+Route::get('faqs', [FaqsController::class, 'index'])->name('faqs');
+Route::get('admin/panel', function () {
     return view('admin.index');
-});
+})->name('admin');
+Route::get('faqs/show', [FaqsController::class, 'show'])->name('faqs.show');
+Route::get('/faqs/{faq}/edit', [FaqsController::class, 'edit'])->name('faqs.edit');
+Route::post('/faqs/{faq}', [FaqsController::class, 'update'])->name('faqs.update');
