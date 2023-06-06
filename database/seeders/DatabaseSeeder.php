@@ -14,7 +14,7 @@ class DatabaseSeeder extends Seeder
     {
         \App\Models\service::factory()->count(15)->create();
         \App\Models\Blog::factory()->count(15)->create();
-        \App\Models\faq::factory()->count(15)->create();
+        \App\Models\Faq::factory()->count(15)->create();
         \App\Models\contact::factory()->count(15);
     }
 }

@@ -9,7 +9,7 @@ use Illuminate\Database\Eloquent\Factories\Factory;
  */
 class FaqFactory extends Factory
 {
-    protected $model = \App\Models\faq::class;
+    protected $model = \App\Models\Faq::class;
 
     /**
      * Define the model's default state.

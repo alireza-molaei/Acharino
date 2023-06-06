@@ -40,6 +40,7 @@
     <!-- =============== APP STYLES ===============-->
     <link rel="stylesheet" href="{{asset('admin/css/app.css')}}" id="maincss" />
     <link rel="stylesheet" href="{{asset('admin/css/rtl.css')}}" id="rtlcss" />
+
 </head>
 
 <body>
@@ -204,8 +205,8 @@
                         </a>
                     </li>
                     <li class=" ">
-                        <a href="#charts" title="نمودارها" data-toggle="collapse"
-                        ><em class="fas fa-chart-bar"></em><span>نمودارها</span></a
+                        <a href="{{route('faqs.show')}}" title="سوالات متداول"
+                        ><em class="fas fa-chart-bar"></em><span>سوالات متداول</span></a
                         >
                         <ul class="sidebar-nav sidebar-subnav collapse" id="charts">
                             <li class="sidebar-subnav-header">نمودارها</li>
@@ -419,13 +420,18 @@
                 </div>
                 <!-- END sidebar nav-->
             </nav>
+
         </div>
         <!-- END Sidebar (Right)-->
+
+
     </aside>
     <!-- offsidebar-->
+    @yield('main-content')
 
     <!-- Main section-->
 </div>
+
 <!-- =============== VENDOR SCRIPTS ===============-->
 <!-- STORAGE API-->
 <script src="{{asset('admin/vendor/js-storage/js.storage.js')}}"></script>

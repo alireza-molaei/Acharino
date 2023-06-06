@@ -2,14 +2,32 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\faq;
-use Illuminate\Http\Request;
+use App\Http\Requests\UpdateFaqRequest;
+use App\Models\Faq;
 
 class FaqsController extends Controller
 {
     public function index()
     {
-        $faqs = faq::all()->take(3);
-        return view('faqs.faq',compact('faqs'));
-   }
+        $faqs = Faq::all()->take(3);
+        return view('faqs.faq', compact('faqs'));
+    }
+
+    public function show()
+    {
+        $faqs = Faq::paginate(8);
+        return view('admin.faq.faqs-show', compact('faqs'));
+
+    }
+
+    public function edit(Faq $faq)
+    {
+        return view('admin.faq.form-faq-edit', compact('faq'));
+    }
+
+    public function update(UpdateFaqRequest $request, Faq $faq)
+    {
+        $faq->update($request->all());
+        return redirect()->route('faqs.show')->with('alert', __('messages.faq_edited'));
+    }
 }
