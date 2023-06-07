@@ -46,7 +46,7 @@ Route::get('about', function () {
 Route::get('faqs', [FaqsController::class, 'index'])->name('faqs');
 Route::get('admin/panel', function () {
     return view('admin.index');
-})->name('admin');
+})->middleware(['auth', 'verified'])->name('admin');
 Route::get('faqs/show', [FaqsController::class, 'show'])->name('faqs.show');
 Route::get('/faqs/{faq}/edit', [FaqsController::class, 'edit'])->name('faqs.edit');
 Route::post('/faqs/{faq}', [FaqsController::class, 'update'])->name('faqs.update');
