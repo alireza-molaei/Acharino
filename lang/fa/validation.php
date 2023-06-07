@@ -146,11 +146,6 @@ return [
         'thumbnail' => 'تصویر بندانگشتی',
         'phone-number' => 'شماره تلفن',
         'message' => 'پیام شما',
-        'password' => [
-            'current_password' => 'رمز عبور کنونی',
-            'password' => 'رمز عبور',
-            'password_confirmation' => 'تایید رمز عبور'
-        ],
         'is_special_offer' => 'پیشنهاد ویژه',
         "user" => [
 
