@@ -49,7 +49,8 @@ Route::get('admin/panel', function () {
 })->middleware(['auth', 'verified'])->name('admin');
 Route::get('faqs/show', [FaqsController::class, 'show'])->name('faqs.show');
 Route::get('/faqs/{faq}/edit', [FaqsController::class, 'edit'])->name('faqs.edit');
-Route::post('/faqs/{faq}', [FaqsController::class, 'update'])->name('faqs.update');
+Route::post('/faqs/{faq}/update', [FaqsController::class, 'update'])->name('faqs.update');
+Route::delete('/faqs/{faq}/delete',[FaqsController::class,'destroy'])->name('faqs.destroy');
 
 Route::get('/dashboard', function () {
     return view('dashboard');

@@ -30,4 +30,10 @@ class FaqsController extends Controller
         $faq->update($request->all());
         return redirect()->route('faqs.show')->with('alert', __('messages.faq_edited'));
     }
+
+    public function destroy(Faq $faq)
+    {
+        $faq->delete();
+        return redirect()->back();
+    }
 }
