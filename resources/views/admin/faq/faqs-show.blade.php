@@ -39,10 +39,14 @@
                             <td>{{ $faq->answer }}</td>
                             <td>
                                 <a class="btn btn-primary" type="button"
-                                   href="{{route('faqs.edit',$faq->id)}}">ویرایش</a>
+                                   href="{{route('faqs.edit',$faq)}}">ویرایش</a>
                             </td>
                             <td>
-                                <a class="btn btn-danger" type="button" href="{{route('faqs.edit',$faq->id)}}">حذف</a>
+                                <form action="{{route('faqs.destroy',$faq->id)}}" method="POST">
+                                    @csrf
+                                    @method('DELETE')
+                                    <button class="btn btn-danger" type="submit">حذف</button>
+                                </form>
                             </td>
                         </tr>
                     @endforeach
