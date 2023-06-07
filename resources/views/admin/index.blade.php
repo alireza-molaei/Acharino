@@ -2,17 +2,17 @@
 <html lang="fa-IR">
 <!-- Mirrored from www.gold-themes.com/themes/47admin/dashboard.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 Mar 2020 07:32:53 GMT -->
 <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8"/>
     <meta
         name="viewport"
         content="width=device-width, initial-scale=1, maximum-scale=1"
     />
-    <meta name="description" content="Bootstrap Admin App" />
+    <meta name="description" content="Bootstrap Admin App"/>
     <meta
         name="keywords"
         content="app, responsive, jquery, bootstrap, dashboard, admin"
     />
-    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico"/>
     <title>Acharnio</title>
     <!-- =============== VENDOR STYLES ===============-->
     <!-- FONT AWESOME-->
@@ -33,13 +33,13 @@
         href="{{asset('admin/vendor/%40fortawesome/fontawesome-free/css/fontawesome.css')}}"
     />
     <!-- ANIMATE.CSS-->
-    <link rel="stylesheet" href="{{asset('admin/vendor/animate.css/animate.css')}}" />
+    <link rel="stylesheet" href="{{asset('admin/vendor/animate.css/animate.css')}}"/>
     <!-- =============== PAGE VENDOR STYLES ===============-->
     <!-- =============== BOOTSTRAP STYLES ===============-->
-    <link rel="stylesheet" href="{{asset('admin/css/bootstrap.css')}}" id="bscss" />
+    <link rel="stylesheet" href="{{asset('admin/css/bootstrap.css')}}" id="bscss"/>
     <!-- =============== APP STYLES ===============-->
-    <link rel="stylesheet" href="{{asset('admin/css/app.css')}}" id="maincss" />
-    <link rel="stylesheet" href="{{asset('admin/css/rtl.css')}}" id="rtlcss" />
+    <link rel="stylesheet" href="{{asset('admin/css/app.css')}}" id="maincss"/>
+    <link rel="stylesheet" href="{{asset('admin/css/rtl.css')}}" id="rtlcss"/>
 
 </head>
 
@@ -53,10 +53,10 @@
             <div class="navbar-header">
                 <a class="navbar-brand" href="#/">
                     <div class="brand-logo">
-                        <img class="img-fluid" src="img/logo.png" alt="لوگو" />
+                        <img class="img-fluid" src="img/logo.png" alt="لوگو"/>
                     </div>
                     <div class="brand-logo-collapsed">
-                        <img class="img-fluid" src="img/logo-single.png" alt="لوگو" />
+                        <img class="img-fluid" src="img/logo-single.png" alt="لوگو"/>
                     </div>
                 </a>
             </div>
@@ -154,7 +154,7 @@
                     <li
                         class="sidebar-app-logo d-flex align-items-center justify-content-center py-3 d-md-none"
                     >
-                        <img class="img-fluid" src="img/logo.png" alt="لوگو" />
+                        <img class="img-fluid" src="img/logo.png" alt="لوگو"/>
                     </li>
                     <!-- START user info-->
                     <li class="has-user-block">
@@ -391,30 +391,20 @@
                     <div class="nav-footer-divider"></div>
                     <!-- START button group-->
                     <div class="btn-group text-center">
-                        <button
-                            class="btn btn-link"
-                            type="button"
-                            data-toggle="tooltip"
-                            data-title="ایجاد مخاطب جدید"
+                        <form method="POST" action="{{ route('logout') }}">
+                            @csrf
+
+                            <button
+
+                                class="btn btn-link"
+                                type="submit"
+                                data-toggle="tooltip"
+                                data-title="خروج"
+                            >
+                                <em class="fas fa-sign-out-alt text-muted"> خروج</em>
+                            </button>
+                        </form>
                         >
-                            <em class="fas fa-user text-muted"
-                            ><sup class="fa fa-plus"></sup
-                                ></em></button
-                        ><button
-                            class="btn btn-link"
-                            type="button"
-                            data-toggle="tooltip"
-                            data-title="تنظیمات"
-                        >
-                            <em class="fas fa-cog text-muted"></em></button
-                        ><button
-                            class="btn btn-link"
-                            type="button"
-                            data-toggle="tooltip"
-                            data-title="خروج"
-                        >
-                            <em class="fas fa-sign-out-alt text-muted"></em>
-                        </button>
                     </div>
                     <!-- END button group-->
                 </div>
