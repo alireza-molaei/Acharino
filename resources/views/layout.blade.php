@@ -16,20 +16,20 @@
     <title> Acharino </title>
 
     <!-- Favicon and Touch Icons -->
-         <link href="{{asset('images/favicon/favicon.png')}}" rel="shortcut icon" type="image/png">
-        <link href="{{asset('images/favicon/apple-touch-icon-57x57.png')}}" rel="apple-touch-icon" sizes="57x57">
-        <link href="{{asset('images/favicon/apple-touch-icon-72x72.png')}}" rel="apple-touch-icon" sizes="72x72">
-        <link href="{{asset('images/favicon/apple-touch-icon-114x114.png')}}" rel="apple-touch-icon" sizes="114x114">
-        <link href="{{asset('images/favicon/apple-touch-icon-144x144.png')}}" rel="apple-touch-icon" sizes="144x144">
-         <link rel="stylesheet" href="{{asset('css/main.css')}}">
-        <link href="{{asset('sass/style.css')}}" rel="stylesheet">
+    <link href="{{asset('images/favicon/favicon.png')}}" rel="shortcut icon" type="image/png">
+    <link href="{{asset('images/favicon/apple-touch-icon-57x57.png')}}" rel="apple-touch-icon" sizes="57x57">
+    <link href="{{asset('images/favicon/apple-touch-icon-72x72.png')}}" rel="apple-touch-icon" sizes="72x72">
+    <link href="{{asset('images/favicon/apple-touch-icon-114x114.png')}}" rel="apple-touch-icon" sizes="114x114">
+    <link href="{{asset('images/favicon/apple-touch-icon-144x144.png')}}" rel="apple-touch-icon" sizes="144x144">
+    <link rel="stylesheet" href="{{asset('css/main.css')}}">
+    <link href="{{asset('sass/style.css')}}" rel="stylesheet">
 
 
-        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-        <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-        <![endif]-->
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
 
 </head>
 
@@ -133,7 +133,7 @@
                             <a href="{{route('index')}}">صفحه اصلی</a>
                         </li>
                         <li><a href="{{route('services')}}">خدمات</a></li>
-                        <li><a href="{{route('faqs')}}">سؤالات متداول</a></li>
+                        <li><a href="{{route('faqs.index')}}">سؤالات متداول</a></li>
 
                         <li>
                             <a href="{{route('blogs')}}">بلاگ</a>

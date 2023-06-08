@@ -20,7 +20,12 @@
                         </div>
                     @endif
                     <h4>جدول سوالات متداول</h4>
+                    <div class="text-left">
+                        <a class="btn btn-lg btn-success" href="{{route('faqs.create')}}"> ایجاد کردن</a>
+
+                    </div>
                 </div>
+
                 <table class="table table-dark">
                     <thead>
                     <tr>

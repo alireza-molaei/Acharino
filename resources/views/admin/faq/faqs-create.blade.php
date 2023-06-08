@@ -4,7 +4,7 @@
         <div class="content-wrapper">
             <div class="card card-default">
                 <div class="card-body">
-                    <form class="form-horizontal" action="{{route('faqs.update',$faq)}}" method="POST" >
+                    <form class="form-horizontal" action="{{route('faqs.store')}}" method="post">
                         @csrf
                         <section class="wrapper"
                                  style='margin-top:60px;display:inline-block;width:100%;padding:15px 0 0 15px;'>
@@ -27,7 +27,7 @@
                                                 </ul>
                                             </div>
                                         @endif
-                                        <h1 class="title">ویرایش سوالات متداول</h1></div>
+                                        <h1 class="title">ساخت سوالات متداول</h1></div>
 
 
                                 </div>
@@ -45,7 +45,8 @@
                                         <div class="row">
                                             <div class="col-md-12 col-sm-12 col-xs-12 mb-3">
                                                 <textarea placeholder=""
-                                                    style="width: 30%; height: 100px; font-size: 14px; line-height: 23px;padding:15px;" name="question">{{$faq->question}}</textarea>
+                                                          style="width: 30%; height: 100px; font-size: 14px; line-height: 23px;padding:15px;"
+                                                          name="question"></textarea>
 
                                             </div>
                                         </div>
@@ -55,14 +56,15 @@
                                         <div class="row">
                                             <div class="col-md-12 col-sm-12 col-xs-12">
                                                 <textarea class="bootstrap-wysihtml5-textarea"
-                                                         value=""
-                                                          style="width: 100%; height: 250px; font-size: 14px; line-height: 23px;padding:15px;" name="answer">{{$faq->answer}}</textarea>
+                                                          value=""
+                                                          style="width: 100%; height: 250px; font-size: 14px; line-height: 23px;padding:15px;"
+                                                          name="answer"></textarea>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="card-body">
                                         <button class="btn btn-labeled btn-success" type="submit"><span
-                                                class="btn-label"><i class="fa fa-check"></i></span>ثبت
+                                                class="btn-label"><i class="fa fa-check"></i></span>انجام
                                         </button>
                                     </div>
                                 </section>
