@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\StoreFaqsRequest;
 use App\Http\Requests\UpdateFaqRequest;
 use App\Models\Faq;
 
@@ -11,6 +12,17 @@ class FaqsController extends Controller
     {
         $faqs = Faq::all()->take(3);
         return view('faqs.faq', compact('faqs'));
+    }
+
+    public function store(StoreFaqsRequest $request)
+    {
+        Faq::create($request->all());
+        return redirect()->route('faqs.show')->with('alert', __('messages.success'));
+    }
+
+    public function create()
+    {
+        return view('admin.faq.faqs-create');
     }
 
     public function show()
