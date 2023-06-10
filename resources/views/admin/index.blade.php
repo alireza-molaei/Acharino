@@ -215,32 +215,9 @@
                         >
                     </li>
                     <li class=" ">
-                        <a href="#forms" title="فرم ها" data-toggle="collapse"
-                        ><em class="fas fa-edit"></em><span>فرم ها</span></a
+                        <a href="{{route('contact.show')}}" title="اطلاعات تماس"
+                        ><em class="fas fa-edit"></em><span>اطلاعات تماس</span></a
                         >
-                        <ul class="sidebar-nav sidebar-subnav collapse" id="forms">
-                            <li class="sidebar-subnav-header">فرم ها</li>
-                            <li class=" ">
-                                <a href="form-standard.html" title="استاندارد"
-                                ><span>استاندارد</span></a
-                                >
-                            </li>
-                            <li class=" ">
-                                <a href="form-extended.html" title="گسترده"
-                                ><span>گسترده</span></a
-                                >
-                            </li>
-                            <li class=" ">
-                                <a href="form-validation.html" title="اعتبارسنجی"
-                                ><span>اعتبارسنجی</span></a
-                                >
-                            </li>
-                            <li class=" ">
-                                <a href="form-wizard.html" title="مرحله ای"
-                                ><span>مرحله ای</span></a
-                                >
-                            </li>
-                        </ul>
                     </li>
                     <li class=" ">
                         <a href="#elements" title="المنت ها" data-toggle="collapse"
@@ -362,9 +339,8 @@
                     <div class="nav-footer-divider"></div>
                     <!-- START button group-->
                     <div class="btn-group text-center">
-                        <form method="POST" action="{{ route('logout') }}">
+                        <form method="POST" action="{{ route('logout')}}">
                             @csrf
-
                             <button
 
                                 class="btn btn-link"
