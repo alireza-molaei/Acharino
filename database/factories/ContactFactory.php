@@ -1,12 +1,10 @@
 <?php
 
 namespace Database\Factories;
-
-use App\Models\Model;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
- * @extends Factory<Model>
+ * @extends  \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Contact>
  */
 class ContactFactory extends Factory
 {
@@ -23,8 +21,8 @@ class ContactFactory extends Factory
             'name' => $this->faker->name(),
             'family' => $this->faker->name(),
             'email' => $this->faker->email(),
-            'phone-number' => $this->faker->randomDigit(),
-            'message' => $this->faker->text(255),
+            'phone' => $this->faker->randomDigit(),
+            'message' => $this->faker->realText(255),
         ];
     }
 }

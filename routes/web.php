@@ -56,7 +56,8 @@ Route::delete('/faqs/{faq}/delete', [FaqsController::class, 'destroy'])->middlew
 Route::get('/services/show',[\App\Http\Controllers\ServicesController::class,'show'])->middleware(['auth', 'verified'])->name('services.show');
 Route::get('/services/{service}/edit',[\App\Http\Controllers\ServicesController::class,'edit'])->middleware(['auth', 'verified'])->name('services.edit');
 Route::post('/services/{service}/update',[\App\Http\Controllers\ServicesController::class,'update'])->middleware(['auth', 'verified'])->name('services.update');
-
+Route::get('/contacts/show', [ContactController::class, 'show'])->middleware(['auth', 'verified'])->name('contact.show');
+Route::delete('/contacts/{contact}/delete', [ContactController::class, 'destroy'])->middleware(['auth', 'verified'])->name('contacts.destroy');
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
