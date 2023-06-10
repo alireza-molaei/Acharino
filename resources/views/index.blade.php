@@ -10,7 +10,7 @@
         <section class="hero hero-slider-wrapper">
             <div class="hero-slider hero-slider-style-1">
                 <div class="slide">
-                    <img src="{{asset('images/slider/slide-1.jpg')}}" alt class="slider-bg">
+                    <img src="{{asset('assets/images/slider/slide-1.jpg')}}" alt class="slider-bg">
                     <div class="container">
                         <div class="row">
                             <div class="col col-lg-8 col-sm-9 slide-caption">
@@ -27,7 +27,7 @@
                 </div>
 
                 <div class="slide">
-                    <img src="{{asset('images/slider/slide-2.jpg')}}" alt class="slider-bg">
+                    <img src="{{asset('assets/images/slider/slide-2.jpg')}}" alt class="slider-bg">
                     <div class="container">
                         <div class="row">
                             <div class="col col-lg-8 col-sm-9 slide-caption">
@@ -44,7 +44,7 @@
                 </div>
 
                 <div class="slide">
-                    <img src="{{asset('images/slider/slide-3.jpg')}}" alt class="slider-bg">
+                    <img src="{{asset('assets/images/slider/slide-3.jpg')}}" alt class="slider-bg">
                     <div class="container">
                         <div class="row">
                             <div class="col col-lg-8 col-sm-9 slide-caption">
@@ -112,7 +112,7 @@
 
 
         <!-- start testimonials -->
-        <section class="testimonials section-padding parallax" data-bg-image="{{asset('images/testimonials/bg.jpg')}}">
+        <section class="testimonials section-padding parallax" data-bg-image="{{asset('assets/images/testimonials/bg.jpg')}}">
             <div class="container">
                 <div class="row">
                     <div class="col col-xs-12">
@@ -128,7 +128,7 @@
                                         </div>
                                         <div class="client-details">
                                             <div class="client-pic">
-                                                <img src="{{asset('images/testimonials/client.jpg')}}" alt>
+                                                <img src="{{asset('assets/images/testimonials/client.jpg')}}" alt>
                                             </div>
                                             <div class="client-info">
                                                 <h4>علیرضا ملائی</h4>
@@ -147,7 +147,7 @@
                                     </div>
                                     <div class="client-details">
                                         <div class="client-pic">
-                                            <img src="{{asset('images/testimonials/client.jpg')}}" alt>
+                                            <img src="{{asset('assets/images/testimonials/client.jpg')}}" alt>
                                         </div>
                                         <div class="client-info">
                                             <h4>حسن کریمی</h4>
@@ -226,7 +226,7 @@
                 </div> <!-- end row -->
             </div> <!-- end container -->
             <div class="backhoe-loader">
-                <img src="{{asset('images/backhoe-loader.png')}}" alt>
+                <img src="{{asset('assets/images/backhoe-loader.png')}}" alt>
             </div>
         </section>
         <!-- end start about-us-faq -->
@@ -239,19 +239,19 @@
                     <div class="col col-xs-12">
                         <div class="partners-slider">
                             <div class="grid">
-                                <img src="{{asset('images/partners/img-1.png')}}" alt>
+                                <img src="{{asset('assets/images/partners/img-1.png')}}" alt>
                             </div>
                             <div class="grid">
-                                <img src="{{asset('images/partners/img-2.png')}}" alt>
+                                <img src="{{asset('assets/images/partners/img-2.png')}}" alt>
                             </div>
                             <div class="grid">
-                                <img src="{{asset('images/partners/img-3.png')}}" alt>
+                                <img src="{{asset('assets/images/partners/img-3.png')}}" alt>
                             </div>
                             <div class="grid">
-                                <img src="{{asset('images/partners/img-4.png')}}" alt>
+                                <img src="{{asset('assets/images/partners/img-4.png')}}" alt>
                             </div>
                             <div class="grid">
-                                <img src="{{asset('images/partners/img-2.png')}}" alt>
+                                <img src="{{asset('assets/images/partners/img-2.png')}}" alt>
                             </div>
                         </div>
                     </div>

@@ -12,11 +12,9 @@ return new class extends Migration {
     {
         Schema::create('services', function (Blueprint $table) {
             $table->id();
-            $table->string('slug', 128)->unique();
             $table->string('title');
             $table->text('description');
-            $table->text('url');
-            $table->string('thumbnail');
+            $table->text('thumbnail');
             $table->timestamps();
         });
     }

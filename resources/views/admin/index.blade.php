@@ -208,40 +208,11 @@
                         <a href="{{route('faqs.show')}}" title="سوالات متداول"
                         ><em class="fas fa-chart-bar"></em><span>سوالات متداول</span></a
                         >
-                        <ul class="sidebar-nav sidebar-subnav collapse" id="charts">
-                            <li class="sidebar-subnav-header">نمودارها</li>
-                            <li class=" ">
-                                <a href="chart-flot.html" title="فلات"><span>فلات</span></a>
-                            </li>
-                            <li class=" ">
-                                <a href="chart-radial.html" title="رادیال"
-                                ><span>رادیال</span></a
-                                >
-                            </li>
-                        </ul>
                     </li>
-                    <li class=" ">
-                        <a href="#tables" title="جداول" data-toggle="collapse"
-                        ><em class="fas fa-table"></em><span>جداول</span></a
+                    <li class="">
+                        <a href="{{route('services.show')}}" title="خدمات ما"
+                        ><em class="fas fa-table"></em><span>خدمات ما</span></a
                         >
-                        <ul class="sidebar-nav sidebar-subnav collapse" id="tables">
-                            <li class="sidebar-subnav-header">جداول</li>
-                            <li class=" ">
-                                <a href="table-datatable.html" title="جداول اطلاعات"
-                                ><span>جداول اطلاعات</span></a
-                                >
-                            </li>
-                            <li class=" ">
-                                <a href="table-standard.html" title="استاندارد"
-                                ><span>استاندارد</span></a
-                                >
-                            </li>
-                            <li class=" ">
-                                <a href="table-extended.html" title="گسترده"
-                                ><span>گسترده</span></a
-                                >
-                            </li>
-                        </ul>
                     </li>
                     <li class=" ">
                         <a href="#forms" title="فرم ها" data-toggle="collapse"

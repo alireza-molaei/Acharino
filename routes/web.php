@@ -46,17 +46,16 @@ Route::get('about', function () {
 Route::get('admin/panel', function () {
     return view('admin.index');
 })->middleware(['auth', 'verified'])->name('admin');
-Route::get('/faqs', [FaqsController::class, 'index'])->name('faqs.index');
-Route::get('/faqs/create', [FaqsController::class, 'create'])->name('faqs.create');
-Route::post('/faqs', [FaqsController::class, 'store'])->name('faqs.store');
-Route::get('faqs/show', [FaqsController::class, 'show'])->name('faqs.show');
-Route::get('/faqs/{faq}/edit', [FaqsController::class, 'edit'])->name('faqs.edit');
-Route::post('/faqs/{faq}/update', [FaqsController::class, 'update'])->name('faqs.update');
-Route::delete('/faqs/{faq}/delete', [FaqsController::class, 'destroy'])->name('faqs.destroy');
-
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
+Route::get('/faqs', [FaqsController::class, 'index'])->middleware(['auth', 'verified'])->name('faqs.index');
+Route::get('/faqs/create', [FaqsController::class, 'create'])->middleware(['auth', 'verified'])->name('faqs.create');
+Route::post('/faqs', [FaqsController::class, 'store'])->middleware(['auth', 'verified'])->name('faqs.store');
+Route::get('faqs/show', [FaqsController::class, 'show'])->middleware(['auth', 'verified'])->name('faqs.show');
+Route::get('/faqs/{faq}/edit', [FaqsController::class, 'edit'])->middleware(['auth', 'verified'])->name('faqs.edit');
+Route::post('/faqs/{faq}/update', [FaqsController::class, 'update'])->middleware(['auth', 'verified'])->name('faqs.update');
+Route::delete('/faqs/{faq}/delete', [FaqsController::class, 'destroy'])->middleware(['auth', 'verified'])->name('faqs.destroy');
+Route::get('/services/show',[\App\Http\Controllers\ServicesController::class,'show'])->middleware(['auth', 'verified'])->name('services.show');
+Route::get('/services/{service}/edit',[\App\Http\Controllers\ServicesController::class,'edit'])->middleware(['auth', 'verified'])->name('services.edit');
+Route::post('/services/{service}/update',[\App\Http\Controllers\ServicesController::class,'update'])->middleware(['auth', 'verified'])->name('services.update');
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');

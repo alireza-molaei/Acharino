@@ -39,7 +39,7 @@
                 </div>
                 <div class="col col-md-7">
                     <div class="offer-pic">
-                        <img src="{{asset('images/offer-pic.jpg')}}" alt>
+                        <img src="{{asset('assets/images/offer-pic.jpg')}}" alt>
                     </div>
                 </div>
             </div> <!-- end row -->
@@ -49,7 +49,7 @@
 
 
     <!-- start cta -->
-    <section class="cta section-padding parallax" data-bg-image="{{asset('images/cta-bg.jpg')}}">
+    <section class="cta section-padding parallax" data-bg-image="{{asset('assets/images/cta-bg.jpg')}}">
         <div class="container">
             <div class="row">
                 <div class="col col-xs-12">
@@ -137,7 +137,7 @@
                                     <span class="hover-4"></span>
                                 </div>
                                 <div class="member-pic">
-                                    <img src="{{asset('images/team/img-1.jpg')}}" alt>
+                                    <img src="{{asset('assets/images/team/img-1.jpg')}}" alt>
                                 </div>
                                 <div class="social">
                                     <ul class="social-links">
@@ -161,7 +161,7 @@
                                     <span class="hover-4"></span>
                                 </div>
                                 <div class="member-pic">
-                                    <img src="{{asset('images/team/img-2.jpg')}}" alt>
+                                    <img src="{{asset('assets/images/team/img-2.jpg')}}" alt>
                                 </div>
                                 <div class="social">
                                     <ul class="social-links">
@@ -185,7 +185,7 @@
                                     <span class="hover-4"></span>
                                 </div>
                                 <div class="member-pic">
-                                    <img src="{{asset('images/team/img-3.jpg')}}" alt>
+                                    <img src="{{asset('assets/images/team/img-3.jpg')}}" alt>
                                 </div>
                                 <div class="social">
                                     <ul class="social-links">
@@ -209,7 +209,7 @@
                                     <span class="hover-4"></span>
                                 </div>
                                 <div class="member-pic">
-                                    <img src="{{asset('images/team/img-1.jpg')}}" alt>
+                                    <img src="{{asset('assets/images/team/img-1.jpg')}}" alt>
                                 </div>
                                 <div class="social">
                                     <ul class="social-links">
@@ -272,19 +272,19 @@
                 <div class="col col-xs-12">
                     <div class="partners-slider">
                         <div class="grid">
-                            <img src="{{asset('images/partners/img-1.png')}}" alt>
+                            <img src="{{asset('assets/images/partners/img-1.png')}}" alt>
                         </div>
                         <div class="grid">
-                            <img src="{{asset('images/partners/img-2.png')}}" alt>
+                            <img src="{{asset('assets/images/partners/img-2.png')}}" alt>
                         </div>
                         <div class="grid">
-                            <img src="{{asset('images/partners/img-3.png')}}" alt>
+                            <img src="{{asset('assets/images/partners/img-3.png')}}" alt>
                         </div>
                         <div class="grid">
-                            <img src="{{asset('images/partners/img-4.png')}}" alt>
+                            <img src="{{asset('assets/images/partners/img-4.png')}}" alt>
                         </div>
                         <div class="grid">
-                            <img src="{{asset('images/partners/img-2.png')}}" alt>
+                            <img src="{{asset('assets/images/partners/img-2.png')}}" alt>
                         </div>
                     </div>
                 </div>

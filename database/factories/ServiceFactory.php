@@ -20,10 +20,9 @@ class ServiceFactory extends Factory
     public function definition(): array
     {
         return [
-            'slug' => $this->faker->slug(),
+
             'title' => $this->faker->name(),
             'description' => $this->faker->realText(99),
-            'url' => $this->faker->url(),
             'thumbnail' => 'https://loremflickr.com/320/240?random='. rand(1,99),
         ];
     }
