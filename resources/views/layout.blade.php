@@ -16,13 +16,13 @@
     <title> Acharino </title>
 
     <!-- Favicon and Touch Icons -->
-    <link href="{{asset('images/favicon/favicon.png')}}" rel="shortcut icon" type="image/png">
-    <link href="{{asset('images/favicon/apple-touch-icon-57x57.png')}}" rel="apple-touch-icon" sizes="57x57">
-    <link href="{{asset('images/favicon/apple-touch-icon-72x72.png')}}" rel="apple-touch-icon" sizes="72x72">
-    <link href="{{asset('images/favicon/apple-touch-icon-114x114.png')}}" rel="apple-touch-icon" sizes="114x114">
-    <link href="{{asset('images/favicon/apple-touch-icon-144x144.png')}}" rel="apple-touch-icon" sizes="144x144">
-    <link rel="stylesheet" href="{{asset('css/main.css')}}">
-    <link href="{{asset('sass/style.css')}}" rel="stylesheet">
+    <link href="{{asset('assets/images/favicon/favicon.png')}}" rel="shortcut icon" type="image/png">
+    <link href="{{asset('assets/images/favicon/apple-touch-icon-57x57.png')}}" rel="apple-touch-icon" sizes="57x57">
+    <link href="{{asset('assets/images/favicon/apple-touch-icon-72x72.png')}}" rel="apple-touch-icon" sizes="72x72">
+    <link href="{{asset('assets/images/favicon/apple-touch-icon-114x114.png')}}" rel="apple-touch-icon" sizes="114x114">
+    <link href="{{asset('assets/images/favicon/apple-touch-icon-144x144.png')}}" rel="apple-touch-icon" sizes="144x144">
+    <link rel="stylesheet" href="{{asset('assets/css/main.css')}}">
+    <link href="{{asset('assets/sass/style.css')}}" rel="stylesheet">
 
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -41,7 +41,7 @@
     <!-- start preloader -->
     <div class="preloader">
         <div class="preloader-inner">
-            <img src="{{asset('images/preloader.gif')}}" alt>
+            <img src="{{asset('assets/images/preloader.gif')}}" alt>
         </div>
     </div>
     <!-- end preloader -->
@@ -90,7 +90,9 @@
                 <div class="row">
                     <div class="col col-sm-3">
                         <div class="site-logo">
-                            <a href="{{route('index')}}"><img src="{{asset('images/logo-2.png')}}" alt></a>
+                            <a href="{{route('index')}}"><img style="width: 50px;height: 50px"
+                                                              src="{{asset('assets/images/favicon/acharinophoto.png')}}"
+                                                              alt></a>
                         </div>
                     </div>
                     <div class="col col-sm-9">
@@ -156,7 +158,8 @@
                 <div class="row">
                     <div class="col col-md-3 col-sm-6">
                         <div class="widget about-widget">
-                            <div class="footer-logo"><img src="{{asset('images/logo.png')}}" alt></div>
+                            <div class="footer-logo"><img src="{{asset('assets/images/favicon/acharino.png')}}" alt>
+                            </div>
                             <ul class="contact-info">
                                 <li><i class="fa fa-home"></i> ایران، تهران بزرگ، تهران، میدان آزادی</li>
                                 <li><i class="fa fa-phone"></i> +1-(547)-257</li>
@@ -231,15 +234,15 @@
 
 <!-- All JavaScript files
 ================================================== -->
-<script src="{{asset('js/jquery.min.js')}}"></script>
-<script src="{{asset('js/bootstrap.min.js')}}"></script>
+<script src="{{asset('assets/js/jquery.min.js')}}"></script>
+<script src="{{asset('assets/js/bootstrap.min.js')}}"></script>
 
 <!-- Plugins for this template -->
-<script src="{{asset('js/jquery-plugin-collection.js')}}"></script>
-<script src="{{asset('js/jquery.mCustomScrollbar.js')}}"></script>
+<script src="{{asset('assets/js/jquery-plugin-collection.js')}}"></script>
+<script src="{{asset('assets/js/jquery.mCustomScrollbar.js')}}"></script>
 
 <!-- Custom script for this template -->
-<script src="{{asset('js/script.js')}}"></script>
+<script src="{{asset('assets/js/script.js')}}"></script>
 </body>
 
 

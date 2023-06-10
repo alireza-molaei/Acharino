@@ -35,7 +35,7 @@
                                     <div class="inner mk-bg-img">
                                         <div class="details ">
                                             <div class="info">
-                                                <img src="{{$service->thumbnail}}" alt class="bg-image">
+                                                <img src="{{$service->service_thumbnail}}" alt class="bg-image">
                                                 <a href="{{route('service-'.$service->id)}}">
                                                     <h3><i class="fi flaticon-construction"></i>{{$service->title}}</h3>
                                                 </a>

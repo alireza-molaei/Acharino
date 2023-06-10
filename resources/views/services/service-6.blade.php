@@ -29,7 +29,7 @@
                 <div class="col col-md-8 col-md-push-2">
                     <div class="service-single-content">
                         <div>
-                            <img src="{{asset('images/service-single-info.jpg')}}" alt>
+                            <img src="{{asset('assets/images/service-single-info.jpg')}}" alt>
                         </div>
                         <div class="title">
                             <h3>قطعات خودرو و سیستم</h3>
