@@ -44,13 +44,13 @@
                             <td>{{ $faq->answer }}</td>
                             <td>
                                 <a class="btn btn-primary" type="button"
-                                   href="{{route('faqs.edit',$faq)}}">ویرایش</a>
+                                   href="{{route('faqs.edit',$faq)}}"> ویرایش <em class="fas mr-2 fa-edit"></em></a>
                             </td>
                             <td>
                                 <form action="{{route('faqs.destroy',$faq->id)}}" method="POST">
                                     @csrf
                                     @method('DELETE')
-                                    <button class="btn btn-danger" type="submit">حذف</button>
+                                    <button class="btn btn-danger" type="submit">حذف<em class="fas ml-2 fa-window-close"></em></button>
                                 </form>
                             </td>
                         </tr>

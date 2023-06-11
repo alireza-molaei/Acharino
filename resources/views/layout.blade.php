@@ -57,13 +57,13 @@
                                 <div>
                                     <i class="fa fa-location-arrow"></i>
                                     <div class="details">
-                                        <p>ایران، تهران بزرگ، تهران، میدان آزادی</p>
+                                        <p>کرج ،قم ، بوار آزادی</p>
                                     </div>
                                 </div>
                                 <div>
                                     <i class="fa fa-phone"></i>
                                     <div class="details">
-                                        <p>+012 (3546) 547</p>
+                                        <p>2222 2020 0912 </p>
                                     </div>
                                 </div>
                             </div>
@@ -158,7 +158,7 @@
                 <div class="row">
                     <div class="col col-md-3 col-sm-6">
                         <div class="widget about-widget">
-                            <div class="footer-logo"><img src="{{asset('assets/images/favicon/acharino.png')}}" alt>
+                            <div class="footer-logo"><img src="{{asset('assets/images/favicon/acharinophoto.png')}}" style="width: 80px;height: 80px" alt>
                             </div>
                             <ul class="contact-info">
                                 <li><i class="fa fa-home"></i> ایران، تهران بزرگ، تهران، میدان آزادی</li>
@@ -170,7 +170,7 @@
 
                     <div class="col col-md-3 col-sm-6">
                         <div class="widget service-links-widget">
-                            <h3>خدمات</h3>
+                            <h3>خدمات ما</h3>
                             <ul>
                                 <li><a href="#">پردازش کشاورزی</a></li>
                                 <li><a href="#">تحقیقات شیمیایی</a></li>

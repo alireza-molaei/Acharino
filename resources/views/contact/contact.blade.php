@@ -38,19 +38,19 @@
                         <ul>
                             <li>
                                 <div class="icon"><i class="fa fa-phone"></i></div>
-                                <p><span>تلفن</span> +1 478 (2492) 54 </p>
+                                <p><span>تلفن</span> 2222 2020 0912 </p>
                             </li>
                             <li>
                                 <div class="icon"><i class="fa fa-envelope"></i></div>
-                                <p><span>ایمیل</span> support@industrial.com </p>
+                                <p><span>ایمیل</span> alirezamolaei@gmail.com </p>
                             </li>
                             <li>
                                 <div class="icon"><i class="fa fa-clock-o"></i></div>
-                                <p><span>ساعات کاری:</span> +1 478 (2492) 54 </p>
+                                <p><span>ساعات کاری:</span> 7-14 / 16-21 </p>
                             </li>
                             <li>
                                 <div class="icon"><i class="fa fa-location-arrow"></i></div>
-                                <p><span>دفتر</span> 1802 Stout Rd, Menomonie,WI 54751 </p>
+                                <p><span>دفتر</span> nafe ghom </p>
                             </li>
                         </ul>
                     </div>

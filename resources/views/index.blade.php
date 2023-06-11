@@ -14,7 +14,7 @@
                     <div class="container">
                         <div class="row">
                             <div class="col col-lg-8 col-sm-9 slide-caption">
-                                <h2>ما بهترین خدمات <span> صنعتی </span> را در سراسر جهان ارائه می دهیم</h2>
+                                <h2>ما بهترین خدمات <span>فنی مهندسی </span> را در سراسر ایران ارائه می دهیم</h2>
                                 <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
                                     گرافیک است.</p>
                                 <div class="btns">
@@ -31,7 +31,7 @@
                     <div class="container">
                         <div class="row">
                             <div class="col col-lg-8 col-sm-9 slide-caption">
-                                <h2>ما بهترین خدمات <span> صنعتی </span> را در سراسر جهان ارائه می دهیم</h2>
+                                <h2>لوازم خانگی نو با خدمات <span>فنی مهندسی آچارینو </span> </h2>
                                 <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
                                     گرافیک است.</p>
                                 <div class="btns">
@@ -48,7 +48,7 @@
                     <div class="container">
                         <div class="row">
                             <div class="col col-lg-8 col-sm-9 slide-caption">
-                                <h2>ما بهترین خدمات <span> صنعتی </span> را در سراسر جهان ارائه می دهیم</h2>
+                                <h2>ما بهترین خدمات <span>فنی مهندسی </span> را در سراسر ایران ارائه می دهیم</h2>
                                 <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
                                     گرافیک است.</p>
                                 <div class="btns">
@@ -92,7 +92,7 @@
                                     <div class="inner mk-bg-img">
                                         <div class="details ">
                                             <div class="info">
-                                                <img src="{{$service->thumbnail}}" alt class="bg-image">
+                                                <img src="{{$service->service_thumbnail}}" alt class="bg-image">
                                                 <a href="{{route('service-'.$service->id)}}">
                                                     <h3><i class="fi flaticon-construction"></i>{{$service->title}}</h3>
                                                 </a>

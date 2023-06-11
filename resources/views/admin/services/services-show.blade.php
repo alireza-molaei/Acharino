@@ -25,7 +25,7 @@
                                 </div>
                                 <div class="col-7 bg-white">
                                     <div class="p-3">
-                                        <div class="float-left mb-3"><a class="btn btn-primary btn-sm" href="{{route('services.edit',$service)}}">ویرایش</a>
+                                        <div class="float-left mb-3"><a class="btn btn-primary btn-sm" href="{{route('services.edit',$service)}}">ویرایش <em class="fas mr-2 fa-edit"></em></a>
                                         </div>
                                         <p><strong>{{$service->title}}</strong></p>
                                         <p>{{$service->description}}

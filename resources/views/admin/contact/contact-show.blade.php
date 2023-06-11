@@ -47,7 +47,7 @@
                                               <td>  <form action="{{route('contacts.destroy',$contact)}}" method="POST">
                                                       @csrf
                                                       @method('DELETE')
-                                                      <button class="btn btn-danger" type="submit">حذف</button>
+                                                      <button class="btn btn-danger" type="submit">حذف </button>
                                                   </form></td>
                                           </tr>
 
