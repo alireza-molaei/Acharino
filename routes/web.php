@@ -45,8 +45,12 @@ Route::get('about', function () {
 })->name('about');
 Route::get('admin/panel', function () {
     return view('admin.index');
+
 })->middleware(['auth', 'verified'])->name('admin');
-Route::get('/faqs', [FaqsController::class, 'index'])->middleware(['auth', 'verified'])->name('faqs.index');
+Route::get('dashboard',function (){
+   return view('admin.index');
+})->middleware(['auth', 'verified'])->name('dashboard');
+Route::get('/faqs', [FaqsController::class, 'index'])->name('faqs.index');
 Route::get('/faqs/create', [FaqsController::class, 'create'])->middleware(['auth', 'verified'])->name('faqs.create');
 Route::post('/faqs', [FaqsController::class, 'store'])->middleware(['auth', 'verified'])->name('faqs.store');
 Route::get('faqs/show', [FaqsController::class, 'show'])->middleware(['auth', 'verified'])->name('faqs.show');
