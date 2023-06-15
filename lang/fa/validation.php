@@ -144,7 +144,7 @@ return [
         'slug' => 'نام یکتا',
         'url' => 'آدرس ویدیو',
         'thumbnail' => 'تصویر بندانگشتی',
-        'phone-number' => 'شماره تلفن',
+        'phone' => 'شماره تلفن',
         'message' => 'پیام شما',
         'is_special_offer' => 'پیشنهاد ویژه',
         "user" => [

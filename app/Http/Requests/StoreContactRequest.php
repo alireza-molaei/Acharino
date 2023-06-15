@@ -25,7 +25,7 @@ class StoreContactRequest extends FormRequest
             'name'=> ['required'],
             'family'=>['required'],
             'email'=>['required','email'],
-            'phone-number'=>['required','integer'],
+            'phone'=>['required','numeric'],
             'message'=>['required','string']
         ];
     }

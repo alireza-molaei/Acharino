@@ -30,7 +30,7 @@ return new class extends Migration {
             $table->dropColumn('name');
             $table->dropColumn('family');
             $table->dropColumn('email');
-            $table->dropColumn('phone-number');
+            $table->dropColumn('phone');
             $table->dropColumn('message');
 
         });

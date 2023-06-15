@@ -79,7 +79,7 @@
                         </div>
                         <div class="col col-sm-6">
                             <label for="phone">شماره تلفن</label>
-                            <input type="text" class="form-control"  name="phone-number" value="{{old('phone')}}">
+                            <input type="text" class="form-control"  name="phone" value="{{old('phone')}}">
                         </div>
                         <div class="col col-sm-12">
                             <label for="message">پیام</label>
